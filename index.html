@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Carma | Luxus Workation Pool Villa auf Koh Lanta, Thailand. High-Speed WiFi, Meerblick, Infinity Pool. Perfekt für Digital Nomads & Familien.">
+    <title>Villa Carma | Luxury Workation Sanctuary Koh Lanta</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://villacarma.com/">
+    <meta property="og:title" content="Villa Carma | Luxury Workation Sanctuary Koh Lanta">
+    <meta property="og:description"
+        content="The Carma | Luxus Workation Pool Villa auf Koh Lanta, Thailand. High-Speed WiFi, Meerblick, Infinity Pool.">
+    <meta property="og:image" content="https://villacarma.com/images/hero.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://villacarma.com/">
+    <meta property="twitter:title" content="Villa Carma | Luxury Workation Sanctuary Koh Lanta">
+    <meta property="twitter:description"
+        content="The Carma | Luxus Workation Pool Villa auf Koh Lanta, Thailand. High-Speed WiFi, Meerblick, Infinity Pool.">
+    <meta property="twitter:image" content="https://villacarma.com/images/hero.webp">
+
+    <!-- Design System: Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- Skip Link for A11y -->
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+    <!-- Header / Navigation -->
+    <header class="site-header" id="home">
+        <div class="container">
+            <a href="#" class="logo">Villa Carma</a>
+            <button class="burger-menu" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#video" data-i18n="nav_video">Video</a></li>
+                    <li><a href="#booking" data-i18n="nav_availability">Verfügbarkeit</a></li>
+                    <li><a href="#amenities" data-i18n="nav_amenities">Ausstattung</a></li>
+                    <li><a href="#gallery" data-i18n="nav_gallery">Galerie</a></li>
+                    <li><a href="#location" data-i18n="nav_location">Lage</a></li>
+                    <li><a href="https://airbnb.de/h/carma" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary" data-i18n="nav_book">Buchen</a></li>
+                    <li class="lang-dropdown">
+                        <button class="current-lang" id="current-lang-btn">🇩🇪 DE</button>
+                        <div class="lang-menu">
+                            <button onclick="switchLang('de')">🇩🇪 DE</button>
+                            <button onclick="switchLang('en')">🇺🇸 EN</button>
+                            <button onclick="switchLang('fr')">🇫🇷 FR</button>
+                            <button onclick="switchLang('es')">🇪🇸 ES</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg" id="hero-slider">
+                <!-- Slider Images -->
+                <img src="images/house2.webp" class="hero-slide active" alt="Villa Carma Exterior"
+                    style="object-fit: cover;">
+                <img src="images/livingroom_up2.webp" class="hero-slide" alt="Living Room Upper Floor"
+                    style="object-fit: cover;">
+                <img src="images/view2.webp" class="hero-slide" alt="Sea View" style="object-fit: cover;">
+                <img src="images/terasse_up.webp" class="hero-slide" alt="Upper Terrace" style="object-fit: cover;">
+                <img src="images/terasse_down.webp" class="hero-slide" alt="Lower Terrace" style="object-fit: cover;">
+                <div class="overlay" style="position: absolute; inset:0; background: rgba(0,0,0,0.3); z-index: 1;">
+                </div>
+            </div>
+
+            <!-- Nav Zones (Now siblings of content for proper z-index) -->
+            <div class="slider-nav-zone prev-zone" id="hero-prev" style="z-index: 10;">‹</div>
+            <div class="slider-nav-zone next-zone" id="hero-next" style="z-index: 10;">›</div>
+            <div class="slider-pagination" style="z-index: 11;"></div>
+
+            <div class="hero-content container" style="z-index: 2; position: relative; pointer-events: none;">
+                <div class="glass-panel" style="pointer-events: auto;">
+                    <span class="eyebrow" data-i18n="hero_eyebrow">Koh Lanta, Thailand</span>
+                    <h1 class="headline" data-i18n="hero_headline">THE CARMA <br /><span class="accent"
+                            data-i18n="hero_subheadline">Luxury Seaview Poolvilla</span></h1>
+                    <p class="subheadline" data-i18n="hero_text">Sunset over Phi-Phi Island. Total Privacy. The ultimate
+                        workspace in
+                        paradise.</p>
+                    <div class="hero-actions">
+                        <a href="https://airbnb.de/h/carma" class="btn btn-primary" target="_blank"
+                            data-i18n="hero_cta">Verfügbarkeit prüfen
+                            & Buchen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" class="video-section section-padding" style="padding-bottom: 0;">
+            <div class="container" style="text-align: center;">
+                <div class="video-wrapper consent-wrapper"
+                    style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: var(--radius-md);">
+                    <!-- Placeholder Image -->
+                    <div class="consent-placeholder"
+                        style="position: absolute; inset: 0; z-index: 2; background: url('images/house3.webp') center/cover; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;">
+
+                        <!-- Play Icon -->
+                        <div class="accept-trigger"
+                            style="width: 80px; height: 80px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border: 2px solid rgba(255,255,255,0.8); cursor: pointer;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="white">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+
+                        <div
+                            style="background: rgba(0,0,0,0.8); padding: 1rem 2rem; border-radius: var(--radius-md); text-align: center; backdrop-filter: blur(5px);">
+                            <p style="color: white; margin-bottom: 0.5rem;" data-i18n="consent_video">Video laden
+                                (YouTube)</p>
+                            <button class="btn btn-primary btn-sm accept-trigger" data-i18n="consent_accept_btn">Inhalt
+                                anzeigen</button>
+                        </div>
+                    </div>
+
+                    <iframe data-src="https://www.youtube-nocookie.com/embed/oWQeL4BS2Is?rel=0&autoplay=1"
+                        title="Villa Carma Tour" class="lazy-iframe" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro / Pulse -->
+        <section class="intro section-padding">
+            <div class="container mobile-stack" style="display: flex; align-items: center; gap: 4rem;">
+                <div class="flow-content" style="flex: 1;">
+                    <h2 class="section-title" data-i18n="intro_title">Stylish. Luxurious. Private.</h2>
+                    <p class="lead-text" data-i18n="intro_text1">Gelegen auf Franks Hill, bietet THE CARMA einen
+                        atemberaubenden 180°-Meerblick.</p>
+                    <p data-i18n="intro_text2">Zwei separate Apartments, vereint zu einer Residenz. 4 Schlafzimmer,
+                        Infinity Pool und Ihre
+                        private
+                        "Sala" für den perfekten Sundowner.</p>
+                </div>
+                <div class="intro-image" style="flex: 1;">
+                    <img src="images/livingroom_down5.webp" alt="Modern Interior Living Room"
+                        style="border-radius: var(--radius-md); box-shadow: var(--shadow-soft);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="booking section-padding bg-light">
+            <div class="container">
+                <div class="booking-layout">
+                    <!-- Left Column: Text & CTA -->
+                    <div class="booking-info">
+                        <h2 class="headline-large" data-i18n="booking_title">Availability:</h2>
+                        <a href="https://airbnb.de/h/carma" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-gold icon-btn" data-i18n="hero_cta">
+                            BOOK NOW <span class="arrow">&rsaquo;</span>
+                        </a>
+                    </div>
+
+                    <!-- Right Column: Widget -->
+                    <!-- Smoobu Booking Widget -->
+                    <div id="booking-widget-container" class="booking-widget-box" style="flex: 1.5;">
+
+                        <!-- DE -->
+                        <div id="smoobuApartment1361225de" class="calendarWidget">
+                            <div class="calendarContent"
+                                data-load-calendar-url="https://login.smoobu.com/de/cockpit/widget/single-calendar/1361225"
+                                data-verification="022e859fa2d373cd12706765a434dc71142e1fc247cc80d3399e0d1f3cc04c8f"
+                                data-baseUrl="https://login.smoobu.com" data-disable-css="false"></div>
+                            <script type="text/javascript"
+                                src="https://login.smoobu.com/js/Apartment/CalendarWidget.js"></script>
+                        </div>
+
+                        <!-- EN -->
+                        <div id="smoobuApartment1361225en" class="calendarWidget">
+                            <div class="calendarContent"
+                                data-load-calendar-url="https://login.smoobu.com/en/cockpit/widget/single-calendar/1361225"
+                                data-verification="022e859fa2d373cd12706765a434dc71142e1fc247cc80d3399e0d1f3cc04c8f"
+                                data-baseUrl="https://login.smoobu.com" data-disable-css="false"></div>
+                            <script type="text/javascript"
+                                src="https://login.smoobu.com/js/Apartment/CalendarWidget.js"></script>
+                        </div>
+
+                        <!-- FR -->
+                        <div id="smoobuApartment1361225fr" class="calendarWidget">
+                            <div class="calendarContent"
+                                data-load-calendar-url="https://login.smoobu.com/fr/cockpit/widget/single-calendar/1361225"
+                                data-verification="022e859fa2d373cd12706765a434dc71142e1fc247cc80d3399e0d1f3cc04c8f"
+                                data-baseUrl="https://login.smoobu.com" data-disable-css="false"></div>
+                            <script type="text/javascript"
+                                src="https://login.smoobu.com/js/Apartment/CalendarWidget.js"></script>
+                        </div>
+
+                        <!-- ES -->
+                        <div id="smoobuApartment1361225es" class="calendarWidget">
+                            <div class="calendarContent"
+                                data-load-calendar-url="https://login.smoobu.com/es/cockpit/widget/single-calendar/1361225"
+                                data-verification="022e859fa2d373cd12706765a434dc71142e1fc247cc80d3399e0d1f3cc04c8f"
+                                data-baseUrl="https://login.smoobu.com" data-disable-css="false"></div>
+                            <script type="text/javascript"
+                                src="https://login.smoobu.com/js/Apartment/CalendarWidget.js"></script>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Amenities Grid -->
+        <section id="amenities" class="amenities section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="amenities_title">Kompromissloser Komfort</h2>
+                    <p data-i18n="amenities_text">Alles, was Sie für Deep Work und Deep Rest brauchen.</p>
+                </div>
+                <div class="grid-3">
+                    <article class="feature-card">
+                        <img src="images/view1.webp" alt="Sunset View"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                        <h3 data-i18n="feat_sunset">Sunset over Phi-Phi</h3>
+                        <p data-i18n="feat_sunset_desc">Täglicher Front-Row-Seat für spektakuläre Sonnenuntergänge über
+                            den berühmten Phi Phi Inseln.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="images/livingroom_down3.webp" alt="Workspace with View"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                        <h3 data-i18n="feat_fiber">High-Speed Fiber</h3>
+                        <p data-i18n="feat_fiber_desc">500 Mbit/s WLAN. Zoom-Calls ohne Ruckeln, selbst am Pool.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="images/coffeemachine1.webp" alt="Italian Coffee Machine"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                        <h3 data-i18n="feat_coffee">Italian Espresso</h3>
+                        <p data-i18n="feat_coffee_desc">Vollautomatische Kaffeemaschine für den perfekten Start in den
+                            Tag. Plus: 2 voll
+                            ausgestattete Küchen.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="images/sala1.webp" alt="Private Sala"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                        <h3 data-i18n="feat_pool">Infinity Pool & Sala</h3>
+                        <p data-i18n="feat_pool_desc">Privater Salzwasser-Pool und traditionelle Sala mit Sonnenliegen
+                            für totale Entspannung.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="images/bedroom_up_front1.webp" alt="Master Bedroom"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                        <h3 data-i18n="feat_aircon">Air Conditioned</h3>
+                        <p data-i18n="feat_aircon_desc">Klimaanlage in allen 4 Schlafzimmern für erholsamen Schlaf.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="images/livingroom_up1.webp" alt="Smart Entertainment Area"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                        <h3 data-i18n="feat_smarttv">Smart Entertainment</h3>
+                        <p data-i18n="feat_smarttv_desc">Große Smart-TVs auf jeder Etage für gemütliche Filmabende.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="reviews_title">Guest Love</h2>
+                    <p data-i18n="reviews_subtitle">Was unsere Gäste sagen</p>
+                </div>
+                <div class="review-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review_1_text">"Ein absoluter Traum! Der Blick ist unbezahlbar
+                            und die Villa ist mit so viel Liebe zum Detail eingerichtet. Wir kommen definitiv wieder!"
+                        </p>
+                        <p class="review-author" data-i18n="review_1_author">Sarah, Deutschland</p>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review_2_text">"Perfekt für unsere Familie. Der Pool, die
+                            Küche, die Ruhe - alles war makellos. Danke an das Team für den tollen Service."</p>
+                        <p class="review-author" data-i18n="review_2_author">Marc, Frankreich</p>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review_3_text">"Wir haben hier einen Monat gearbeitet. Das
+                            Internet ist superschnell und die Umgebung inspiriert einfach. Ein Juwel."</p>
+                        <p class="review-author" data-i18n="review_3_author">Elena, Spanien</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://airbnb.de/h/carma" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary"
+                        style="background: transparent; border: 1px solid var(--color-primary); color: var(--color-primary);">
+                        See all reviews on Airbnb
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery section-padding bg-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Gallery</h2>
+                    <p>Explore The Carma</p>
+                </div>
+                <div class="gallery-viewer">
+                    <div class="gallery-main-stage">
+                        <img id="gallery-active-img" src="" alt="Villa Carma Gallery Active">
+                    </div>
+                    <div class="gallery-thumbs-container">
+                        <div class="gallery-thumbs-track" id="gallery-thumbs">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Map -->
+        <section id="location" class="location section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="nav_location">Lage</h2>
+                    <p>Franks Hill, Koh Lanta, Krabi 81150</p>
+                </div>
+                <div class="map-wrapper consent-wrapper"
+                    style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-soft); height: 450px; position: relative;">
+
+                    <!-- Placeholder -->
+                    <div class="consent-placeholder"
+                        style="position: absolute; inset: 0; z-index: 2; background: url('images/view2.webp') center/cover; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.7); padding: 1rem 2rem; border-radius: var(--radius-md); text-align: center;">
+                            <p style="color: white; margin-bottom: 0.5rem;" data-i18n="consent_map">Karte laden (Google
+                                Maps)</p>
+                            <button class="btn btn-primary btn-sm accept-trigger" data-i18n="consent_accept_btn">Inhalt
+                                anzeigen</button>
+                        </div>
+                    </div>
+
+                    <iframe class="lazy-iframe"
+                        data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.837367809923!2d99.0375634!3d7.5934969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMzUnMzYuNiJOIDk5wrAwMicxNS4yIkU!5e0!3m2!1sen!2sth!4v1705537000000!5m2!1sen!2sth&t=h"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Cookie Banner -->
+        <div id="cookie-banner" class="cookie-banner">
+            <div class="cookie-content">
+                <p class="mb-2" data-i18n="cookie_text">Wir nutzen Cookies für ein besseres Erlebnis.</p>
+                <a href="#" class="cookie-link" data-i18n="cookie_link">Datenschutzerklärung</a>
+                <div class="cookie-actions">
+                    <button id="cookie-reject" class="btn btn-sm"
+                        style="background: transparent; border: 1px solid #ccc; color: #666; margin-right: 0.5rem;"
+                        data-i18n="cookie_reject">Ablehnen</button>
+                    <button id="cookie-accept" class="btn btn-primary btn-sm"
+                        data-i18n="cookie_accept">Akzeptieren</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/thecarmavilla/" target="_blank"
+                        rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.youtube.com/channel/UCnHPX3z3hSBJuKJ9ks4qhqQ" target="_blank"
+                        rel="noopener noreferrer">YouTube</a>
+                    <a href="https://wa.me/message/5TQ5RNEMID3SN1" target="_blank"
+                        rel="noopener noreferrer">WhatsApp</a>
+                    <a href="mailto:hi@villacarma.com">Email</a>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#" data-i18n="footer_imprint">Impressum</a>
+                    <a href="#" data-i18n="footer_privacy">Datenschutz</a>
+                    <a href="#" id="cookie-settings-btn" data-i18n="footer_cookies">Cookie-Einstellungen</a>
+                </nav>
+                <p data-i18n="footer_rights" style="margin-top: 2rem; font-size: 0.8em; opacity: 0.5;">&copy; 2026 Villa
+                    Carma. Designed in Koh Lanta.</p>
+            </div>
+        </footer>
+
+        <!-- Floating Cookie settings trigger -->
+        <button id="cookie-reopen-btn" aria-label="Cookie-Einstellungen" style="display: none;">🍪</button>
+
+        <script src="js/app.js" type="module"></script>
+</body>
+
+</html>
