@@ -161,6 +161,7 @@ function initConsentManager() {
 
     if (status === 'true') {
         unlockThirdPartyContent();
+        loadGoogleAnalytics();
         showReopenButton();
     } else if (status === 'false') {
         showReopenButton();
@@ -213,6 +214,7 @@ function initConsentManager() {
         localStorage.setItem(localKey, 'true');
         banner.classList.remove('show');
         unlockThirdPartyContent();
+        loadGoogleAnalytics();
         showReopenButton();
     }
 
@@ -241,6 +243,27 @@ function initConsentManager() {
             if (placeholder) {
                 placeholder.style.display = 'none';
             }
+        });
+    }
+
+    function loadGoogleAnalytics() {
+        if (window.gaLoaded) return;
+        window.gaLoaded = true;
+
+        // 1. Inject the Google Tag script
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-M9L5NHMTS2';
+        document.head.appendChild(script);
+
+        // 2. Initialize dataLayer and gtag
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', 'G-M9L5NHMTS2', {
+            'anonymize_ip': true
         });
     }
 }
