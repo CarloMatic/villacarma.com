@@ -287,6 +287,7 @@ p {
 .hero-content {
     max-width: 800px;
     z-index: 1;
+    transition: opacity 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .hero .headline {
@@ -507,6 +508,15 @@ p {
 .hero:has(#hero-next:hover) .overlay,
 .hero:has(.slider-pagination:hover) .overlay {
     opacity: 0.02; /* Almost invisible so the details and colors of the images shine */
+}
+
+/* Fade out hero content/glass panel during interaction to ensure unobstructed view */
+.hero.interaction-active .hero-content,
+.hero:has(#hero-prev:hover) .hero-content,
+.hero:has(#hero-next:hover) .hero-content,
+.hero:has(.slider-pagination:hover) .hero-content {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .hero-slide {
@@ -891,14 +901,14 @@ main {
 
 @media (max-width: 768px) {
     .booking-widget-box {
-        height: 435px !important;
+        height: 300px !important;
     }
 
     /* Force iframe to follow container */
     .calendarWidget,
     .calendarContent,
     .calendarContent iframe {
-        max-height: 435px !important;
+        max-height: 300px !important;
     }
 }
 
@@ -964,9 +974,9 @@ main {
     /* Mobile Widget Constraints */
     .booking-widget-box {
         width: 100%;
-        height: 435px !important;
-        /* Matches Desktop preference */
-        max-height: 435px !important;
+        height: 300px !important;
+        /* Hides the next month on mobile */
+        max-height: 300px !important;
         flex: none !important;
     }
 }
