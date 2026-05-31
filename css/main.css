@@ -492,6 +492,23 @@ p {
     overflow: hidden;
 }
 
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: opacity 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    pointer-events: none;
+}
+
+/* Fade out overlay to showcase the bright original image during interaction */
+.hero.interaction-active .overlay,
+.hero:has(#hero-prev:hover) .overlay,
+.hero:has(#hero-next:hover) .overlay,
+.hero:has(.slider-pagination:hover) .overlay {
+    opacity: 0.02; /* Almost invisible so the details and colors of the images shine */
+}
+
 .hero-slide {
     position: absolute;
     inset: 0;
@@ -960,6 +977,13 @@ main {
     justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
+    flex-wrap: wrap; /* Prevents overflow clipping on mobile */
+}
+
+@media (max-width: 480px) {
+    .footer-social {
+        gap: 1rem 1.5rem; /* Tighter padding for vertical/horizontal spacing on small screens */
+    }
 }
 
 .footer-social a {
