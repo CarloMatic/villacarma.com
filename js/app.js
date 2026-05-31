@@ -162,7 +162,7 @@ function initConsentManager() {
 
     if (status === 'true') {
         unlockThirdPartyContent();
-        loadGoogleAnalytics();
+        triggerAnalytics();
         showReopenButton();
     } else if (status === 'false') {
         showReopenButton();
@@ -215,7 +215,7 @@ function initConsentManager() {
         localStorage.setItem(localKey, 'true');
         banner.classList.remove('show');
         unlockThirdPartyContent();
-        loadGoogleAnalytics();
+        triggerAnalytics();
         showReopenButton();
     }
 
@@ -247,14 +247,25 @@ function initConsentManager() {
         });
     }
 
-    function loadGoogleAnalytics() {
+    function triggerAnalytics() {
+        const GTM_ID = ''; // Insert GTM ID here (e.g. 'GTM-XXXXXXX') to load GTM instead of direct GA4
+        const GA4_ID = 'G-M9L5NHMTS2'; // Fallback direct GA4 Measurement ID
+
+        if (GTM_ID) {
+            loadGoogleTagManager(GTM_ID);
+        } else if (GA4_ID) {
+            loadGoogleAnalytics(GA4_ID);
+        }
+    }
+
+    function loadGoogleAnalytics(measurementId) {
         if (window.gaLoaded) return;
         window.gaLoaded = true;
 
         // 1. Inject the Google Tag script
         const script = document.createElement('script');
         script.async = true;
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-M9L5NHMTS2';
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
         document.head.appendChild(script);
 
         // 2. Initialize dataLayer and gtag
@@ -263,9 +274,27 @@ function initConsentManager() {
         window.gtag = gtag;
 
         gtag('js', new Date());
-        gtag('config', 'G-M9L5NHMTS2', {
+        gtag('config', measurementId, {
             'anonymize_ip': true
         });
+    }
+
+    function loadGoogleTagManager(containerId) {
+        if (window.gtmLoaded) return;
+        window.gtmLoaded = true;
+
+        // 1. Initialize dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+
+        // 2. Inject GTM script
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtm.js?id=${containerId}`;
+        document.head.appendChild(script);
     }
 }
 
