@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollHeader();
     initMobileMenu();
     initConsentManager();
+    initEmailProtection();
 });
 
 function initScrollHeader() {
@@ -438,5 +439,19 @@ function initMobileMenu() {
                 burger.setAttribute('aria-expanded', 'false');
             });
         });
+    }
+}
+
+/**
+ * Anti-spambot email link protection
+ * Dynamically constructs the mailto target when the document loads,
+ * preventing email scrapers parsing the static HTML from harvesting the address.
+ */
+function initEmailProtection() {
+    const emailLink = document.getElementById('email-link');
+    if (emailLink) {
+        const u = 'hi';
+        const d = 'villacarma.com';
+        emailLink.setAttribute('href', `mailto:${u}@${d}`);
     }
 }
