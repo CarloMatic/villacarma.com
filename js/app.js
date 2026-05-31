@@ -248,8 +248,8 @@ function initConsentManager() {
     }
 
     function triggerAnalytics() {
-        const GTM_ID = ''; // Insert GTM ID here (e.g. 'GTM-XXXXXXX') to load GTM instead of direct GA4
-        const GA4_ID = 'G-M9L5NHMTS2'; // Fallback direct GA4 Measurement ID
+        const GTM_ID = 'GTM-NXGT8CB9'; // Insert GTM ID here (e.g. 'GTM-XXXXXXX') to load GTM instead of direct GA4
+        const GA4_ID = 'G-RJX4PM40Y5'; // Fallback direct GA4 Measurement ID
 
         if (GTM_ID) {
             loadGoogleTagManager(GTM_ID);
