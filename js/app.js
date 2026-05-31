@@ -325,6 +325,52 @@ function initHeroSlider() {
     // Event Listeners for click zones
     if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetInterval(); });
     if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetInterval(); });
+
+    // Swipe gestures & overlay fading logic
+    const hero = document.querySelector('.hero');
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let interactionTimeout;
+
+    function triggerInteraction() {
+        if (hero) {
+            hero.classList.add('interaction-active');
+            clearTimeout(interactionTimeout);
+            interactionTimeout = setTimeout(() => {
+                hero.classList.remove('interaction-active');
+            }, 3000); // Overlay fades back in after 3 seconds of no interaction
+        }
+    }
+
+    if (hero) {
+        // Swiping gestures
+        hero.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+            triggerInteraction();
+        }, { passive: true });
+
+        hero.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            const threshold = 50;
+            if (touchEndX < touchStartX - threshold) {
+                nextSlide();
+                resetInterval();
+            } else if (touchEndX > touchStartX + threshold) {
+                prevSlide();
+                resetInterval();
+            }
+            triggerInteraction();
+        }, { passive: true });
+
+        // Hover or click interaction to dim overlay on desktop/touch
+        prevBtn && prevBtn.addEventListener('mouseenter', triggerInteraction);
+        nextBtn && nextBtn.addEventListener('mouseenter', triggerInteraction);
+        pagination && pagination.addEventListener('mouseenter', triggerInteraction);
+
+        prevBtn && prevBtn.addEventListener('click', triggerInteraction);
+        nextBtn && nextBtn.addEventListener('click', triggerInteraction);
+        pagination && pagination.addEventListener('click', triggerInteraction);
+    }
 }
 
 /**
