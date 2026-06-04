@@ -415,7 +415,7 @@ function initGallery() {
     // All available images
     const images = [
         'hero.webp', 'house1.webp', 'house2.webp', 'house3.webp', 'house4.webp',
-        'pool2.webp', 'pool3.webp', 'pool4.webp', 'pool5.webp',
+        'pool3.webp', 'pool4.webp', 'pool5.webp',
         'view1.webp', 'view2.webp', 'garden.webp',
         'livingroom_up1.webp', 'livingroom_up2.webp',
         'livingroom_down1.webp', 'livingroom_down2.webp', 'livingroom_down3.webp',
