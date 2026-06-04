@@ -453,12 +453,19 @@ function initGallery() {
     function setGalleryIndex(index) {
         currentIndex = index;
 
-        // Update Main
-        mainImg.style.opacity = '0.5'; // Fade out effect
-        setTimeout(() => {
-            mainImg.src = `images/${images[currentIndex]}`;
+        const nextSrc = `images/${images[currentIndex]}`;
+        
+        // Start fading out the current image (dim it to 0.3 for a smooth transition)
+        mainImg.style.opacity = '0.3';
+        
+        // Preload next image to ensure no white flashing while the browser downloads/decodes the image
+        const tempImg = new Image();
+        tempImg.onload = () => {
+            // Swap src once the new image is fully loaded in memory, then fade back to 1
+            mainImg.src = nextSrc;
             mainImg.style.opacity = '1';
-        }, 150);
+        };
+        tempImg.src = nextSrc;
 
         // Update Thumbs
         document.querySelectorAll('.gallery-thumb').forEach((el, i) => {
