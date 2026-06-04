@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initConsentManager();
     initEmailProtection();
+    initLightbox();
 });
 
 function initScrollHeader() {
@@ -486,6 +487,24 @@ function initGallery() {
         autoPlayInterval = setInterval(nextImage, 3000); // Change every 3 seconds
     }
 
+    const prevBtn = document.getElementById('gallery-prev');
+    const nextBtn = document.getElementById('gallery-next');
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            let prev = currentIndex - 1;
+            if (prev < 0) prev = images.length - 1;
+            setGalleryIndex(prev);
+            resetGalleryTimer();
+        });
+    }
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextImage();
+            resetGalleryTimer();
+        });
+    }
+
     // Start Autoplay
     resetGalleryTimer();
 }
@@ -530,3 +549,65 @@ function initEmailProtection() {
         emailLink.setAttribute('href', `mailto:${u}@${d}`);
     }
 }
+
+/**
+ * Responsive Lightbox logic for content images.
+ * Dynamically overlays clicked images and closes via overlay clicks, escape key, or close button.
+ */
+function initLightbox() {
+    // 1. Create Lightbox markup if it doesn't exist
+    let overlay = document.querySelector('.lightbox-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'lightbox-overlay';
+        overlay.innerHTML = `
+            <div class="lightbox-content">
+                <button class="lightbox-close" aria-label="Schließen">&times;</button>
+                <img src="" alt="Vergrößertes Bild">
+            </div>
+        `;
+        document.body.appendChild(overlay);
+    }
+
+    const lightboxImg = overlay.querySelector('img');
+    const closeBtn = overlay.querySelector('.lightbox-close');
+
+    // 2. Open Lightbox on clickable image click
+    const selectors = '.intro-image img, .feature-card img, #gallery-active-img';
+    document.addEventListener('click', (e) => {
+        if (e.target.matches(selectors)) {
+            const src = e.target.getAttribute('src');
+            if (src) {
+                lightboxImg.src = src;
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Disable background scrolling
+            }
+        }
+    });
+
+    // 3. Close Lightbox handler
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = ''; // Restore background scrolling
+        setTimeout(() => {
+            lightboxImg.src = ''; // Clean image source after transition
+        }, 300);
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    
+    // Close when clicking outside of the image
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            closeLightbox();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+}
+
