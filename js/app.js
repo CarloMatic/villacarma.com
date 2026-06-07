@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initConsentManager();
     initEmailProtection();
     initLightbox();
+    initDynamicIframeTitles();
 });
 
 function initScrollHeader() {
@@ -313,7 +314,9 @@ function initHeroSlider() {
 
     // Create dots
     slides.forEach((_, index) => {
-        const dot = document.createElement('div');
+        const dot = document.createElement('button');
+        dot.setAttribute('type', 'button');
+        dot.setAttribute('aria-label', `Gehe zu Slide ${index + 1}`);
         dot.classList.add('slider-dot');
         if (index === 0) dot.classList.add('active');
         dot.addEventListener('click', () => {
@@ -570,7 +573,7 @@ function initLightbox() {
         overlay.innerHTML = `
             <div class="lightbox-content">
                 <button class="lightbox-close" aria-label="Schließen">&times;</button>
-                <img src="" alt="Vergrößertes Bild">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Vergrößertes Bild">
             </div>
         `;
         document.body.appendChild(overlay);
@@ -597,7 +600,7 @@ function initLightbox() {
         overlay.classList.remove('active');
         document.body.style.overflow = ''; // Restore background scrolling
         setTimeout(() => {
-            lightboxImg.src = ''; // Clean image source after transition
+            lightboxImg.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // Clean image source after transition
         }, 300);
     }
 
@@ -615,6 +618,35 @@ function initLightbox() {
         if (e.key === 'Escape' && overlay.classList.contains('active')) {
             closeLightbox();
         }
+    });
+}
+
+/**
+ * Dynamic accessibility title injector for third-party elements (like Smoobu widgets).
+ * Monitors DOM mutations and adds title attributes to injected iframes.
+ */
+function initDynamicIframeTitles() {
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                if (node.tagName === 'IFRAME') {
+                    if (!node.getAttribute('title')) {
+                        node.setAttribute('title', 'Smoobu Buchungskalender');
+                    }
+                } else if (node.querySelectorAll) {
+                    node.querySelectorAll('iframe').forEach((iframe) => {
+                        if (!iframe.getAttribute('title')) {
+                            iframe.setAttribute('title', 'Smoobu Buchungskalender');
+                        }
+                    });
+                }
+            });
+        });
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
     });
 }
 
