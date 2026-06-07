@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initEmailProtection();
     initLightbox();
     initDynamicIframeTitles();
+    initBookingWidgetLazy();
 });
 
 function initScrollHeader() {
@@ -648,5 +649,33 @@ function initDynamicIframeTitles() {
         childList: true,
         subtree: true
     });
+}
+
+/**
+ * Lazy loads the third-party Smoobu booking calendar widget script.
+ * Uses an IntersectionObserver to dynamically inject the script only when the user scrolls near the booking section.
+ */
+function initBookingWidgetLazy() {
+    const bookingSection = document.getElementById('booking');
+    if (!bookingSection) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Dynamically inject the third-party Smoobu script
+                const script = document.createElement('script');
+                script.src = 'https://login.smoobu.com/js/Apartment/CalendarWidget.js';
+                script.defer = true;
+                document.body.appendChild(script);
+
+                // Disconnect observer after load to prevent redundant checks
+                observer.unobserve(bookingSection);
+            }
+        });
+    }, {
+        rootMargin: '200px' // Start loading 200px before it enters the viewport
+    });
+
+    observer.observe(bookingSection);
 }
 
