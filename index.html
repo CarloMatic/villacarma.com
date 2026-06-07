@@ -36,6 +36,9 @@
     <meta property="twitter:image" content="https://villacarma.com/images/house2.webp">
     <meta property="twitter:image:alt" content="The Carma Villa Koh Lanta Exterior">
 
+    <!-- Preload LCP Hero Image -->
+    <link rel="preload" href="images/house2.webp" as="image" type="image/webp" fetchpriority="high">
+
     <!-- Design System: Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,18 +148,18 @@
             <div class="hero-bg" id="hero-slider">
                 <!-- Slider Images -->
                 <img src="images/house2.webp" class="hero-slide active" alt="Villa Carma Exterior"
-                    style="object-fit: cover;">
+                    style="object-fit: cover;" fetchpriority="high">
                 <img src="images/livingroom_up2.webp" class="hero-slide" alt="Living Room Upper Floor"
-                    style="object-fit: cover;">
-                <img src="images/view2.webp" class="hero-slide" alt="Sea View" style="object-fit: cover;">
-                <img src="images/terasse_up.webp" class="hero-slide" alt="Upper Terrace" style="object-fit: cover;">
-                <img src="images/terasse_down.webp" class="hero-slide" alt="Lower Terrace" style="object-fit: cover;">
+                    style="object-fit: cover;" loading="lazy">
+                <img src="images/view2.webp" class="hero-slide" alt="Sea View" style="object-fit: cover;" loading="lazy">
+                <img src="images/terasse_up.webp" class="hero-slide" alt="Upper Terrace" style="object-fit: cover;" loading="lazy">
+                <img src="images/terasse_down.webp" class="hero-slide" alt="Lower Terrace" style="object-fit: cover;" loading="lazy">
                 <div class="overlay"></div>
             </div>
 
             <!-- Nav Zones (Now siblings of content for proper z-index) -->
-            <div class="slider-nav-zone prev-zone" id="hero-prev" style="z-index: 10;">‹</div>
-            <div class="slider-nav-zone next-zone" id="hero-next" style="z-index: 10;">›</div>
+            <div class="slider-nav-zone prev-zone" id="hero-prev" style="z-index: 10;" role="button" aria-label="Vorheriges Bild">‹</div>
+            <div class="slider-nav-zone next-zone" id="hero-next" style="z-index: 10;" role="button" aria-label="Nächstes Bild">›</div>
             <div class="slider-pagination" style="z-index: 11;"></div>
 
             <div class="hero-content container" style="z-index: 2; position: relative; pointer-events: none;">
@@ -403,7 +406,7 @@
                     <div class="gallery-main-stage">
                         <div class="slider-nav-zone prev-zone" id="gallery-prev" role="button" aria-label="Vorheriges Bild">‹</div>
                         <div class="slider-nav-zone next-zone" id="gallery-next" role="button" aria-label="Nächstes Bild">›</div>
-                        <img id="gallery-active-img" src="" alt="Villa Carma Gallery Active">
+                        <img id="gallery-active-img" src="images/hero.webp" alt="Villa Carma Gallery Active">
                     </div>
                     <div class="gallery-thumbs-container">
                         <div class="gallery-thumbs-track" id="gallery-thumbs">
@@ -438,7 +441,7 @@
                     <iframe class="lazy-iframe"
                         data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.837367809923!2d99.0375634!3d7.5934969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMzUnMzYuNiJOIDk5wrAwMicxNS4yIkU!5e0!3m2!1sen!2sth!4v1705537000000!5m2!1sen!2sth&t=h"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        referrerpolicy="no-referrer-when-downgrade" title="Google Maps Lageplan der Villa Carma">
                     </iframe>
                 </div>
             </div>
@@ -462,12 +465,12 @@
             <div class="container">
                 <div class="footer-social">
                     <a href="https://www.instagram.com/thecarmavilla/" target="_blank"
-                        rel="noopener noreferrer">Instagram</a>
+                        rel="noopener noreferrer" aria-label="Villa Carma auf Instagram besuchen (öffnet in neuem Tab)">Instagram</a>
                     <a href="https://www.youtube.com/@thecarmavilla" target="_blank"
-                        rel="noopener noreferrer">YouTube</a>
+                        rel="noopener noreferrer" aria-label="Villa Carma auf YouTube besuchen (öffnet in neuem Tab)">YouTube</a>
                     <a href="https://wa.me/message/5TQ5RNEMID3SN1" target="_blank"
-                        rel="noopener noreferrer">WhatsApp</a>
-                    <a href="#" id="email-link">Email</a>
+                        rel="noopener noreferrer" aria-label="Villa Carma auf WhatsApp kontaktieren (öffnet in neuem Tab)">WhatsApp</a>
+                    <a href="#" id="email-link" aria-label="E-Mail an Villa Carma schreiben">Email</a>
                 </div>
                 <nav class="footer-nav">
                     <a href="#" data-i18n="footer_imprint">Impressum</a>

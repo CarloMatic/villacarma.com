@@ -611,6 +611,10 @@ p {
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s;
+    /* Reset button defaults for A11y conversion */
+    border: none;
+    padding: 0;
+    outline: none;
 }
 
 .slider-dot.active {
