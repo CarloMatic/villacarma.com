@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initLightbox();
     initDynamicIframeTitles();
     initBookingWidgetLazy();
+    initStickyBookingBar();
 });
 
 function initScrollHeader() {
@@ -32,6 +33,32 @@ function initScrollHeader() {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
+        }
+    });
+}
+
+function initStickyBookingBar() {
+    const stickyBar = document.getElementById('sticky-booking-bar');
+    const heroSection = document.querySelector('.hero');
+    const bookingSection = document.getElementById('booking');
+    if (!stickyBar || !heroSection) return;
+
+    window.addEventListener('scroll', () => {
+        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+        const scrollPos = window.scrollY;
+
+        if (scrollPos > heroBottom - 100) {
+            if (bookingSection) {
+                const bookingTop = bookingSection.offsetTop;
+                const bookingBottom = bookingTop + bookingSection.offsetHeight;
+                if (scrollPos >= bookingTop - 200 && scrollPos <= bookingBottom) {
+                    stickyBar.classList.remove('visible');
+                    return;
+                }
+            }
+            stickyBar.classList.add('visible');
+        } else {
+            stickyBar.classList.remove('visible');
         }
     });
 }

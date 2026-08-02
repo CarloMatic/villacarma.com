@@ -1466,3 +1466,118 @@ main {
     line-height: 1.6;
     font-size: 0.95rem;
 }
+
+/* --- CRO COMPONENTS --- */
+
+/* Hero Superhost Rating Badge */
+.hero-superhost-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    color: #f59e0b;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.hero-superhost-badge span {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+/* Sticky Mobile Booking Bar */
+.sticky-booking-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 990;
+    background: rgba(18, 18, 18, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-booking-bar.visible {
+    transform: translateY(0);
+}
+
+.sticky-bar-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-bar-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.sticky-bar-sub {
+    color: var(--color-gold);
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+@media (min-width: 769px) {
+    .sticky-booking-bar {
+        display: none !important;
+    }
+}
+
+/* Floating WhatsApp Concierge Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 985;
+    background: #25D366;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+    color: #ffffff;
+}
+
+.whatsapp-float svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 75px; /* Stay clear of sticky bar on mobile */
+        padding: 0.65rem;
+        border-radius: 50%;
+        right: 15px;
+    }
+    .whatsapp-tooltip {
+        display: none;
+    }
+}

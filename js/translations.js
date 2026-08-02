@@ -83,7 +83,11 @@ const translations = {
         faq_q9: "Sind Reinigung und frische Wäsche inklusive?",
         faq_a9: "Ja, eine professionelle Reinigung erfolgt vor der Anreise. Bei längeren Aufenthalten sind eine wöchentliche Zwischenreinigung sowie der Wechsel von Handtüchern und Bettwäsche im Preis inbegriffen.",
         faq_q10: "Kann ein Flughafentransfer zur Villa organisiert werden?",
-        faq_a10: "Ja, wir können gerne einen privaten Van-Transfer direkt vom Flughafen Krabi (KBV) zur Villa für dich organisieren, inklusive der Autofähre. Bitte teile uns deine Flugdaten rechtzeitig mit."
+        faq_a10: "Ja, wir können gerne einen privaten Van-Transfer direkt vom Flughafen Krabi (KBV) zur Villa für dich organisieren, inklusive der Autofähre. Bitte teile uns deine Flugdaten rechtzeitig mit.",
+        hero_badge: "★ 4.98 / 5.0 Airbnb Superhost • 100% verifizierte Gästebewertungen",
+        sticky_sub: "4 Schlafzimmer • 500 Mbit/s WLAN",
+        sticky_btn: "Verfügbarkeit prüfen",
+        whatsapp_tooltip: "Frage stellen"
     },
     en: {
         nav_video: "Video",
@@ -169,7 +173,11 @@ const translations = {
         faq_q9: "Are cleaning services and fresh linen included?",
         faq_a9: "Yes, professional cleaning is provided before arrival. For longer stays, regular housekeeping, towel changes, and bed linen refreshes are included once a week.",
         faq_q10: "Can you arrange airport transfers to the villa?",
-        faq_a10: "Yes, we can help arrange private van transfers directly from Krabi Airport (KBV) to the villa, including the car ferry transition. Please let us know your flight details in advance."
+        faq_a10: "Yes, we can help arrange private van transfers directly from Krabi Airport (KBV) to the villa, including the car ferry transition. Please let us know your flight details in advance.",
+        hero_badge: "★ 4.98 / 5.0 Airbnb Superhost • 100% Verified Guest Reviews",
+        sticky_sub: "4 Bedrooms • 500 Mbps WiFi",
+        sticky_btn: "Check Availability",
+        whatsapp_tooltip: "Chat with us"
     },
     fr: {
         nav_video: "Vidéo",
@@ -255,7 +263,11 @@ const translations = {
         faq_q9: "Le ménage et les draps propres sont-ils inclus?",
         faq_a9: "Oui, un nettoyage professionnel est effectué avant votre arrivée. Pour les longs séjours, le ménage hebdomadaire, le changement des serviettes et des draps sont inclus une fois par semaine.",
         faq_q10: "Pouvez-vous organiser les transferts depuis l'aéroport?",
-        faq_a10: "Oui, nous pouvons organiser un transfert en van privé depuis l'aéroport de Krabi (KBV) jusqu'à la villa, y compris la traversée en ferry. Veuillez nous communiquer vos détails de vol à l'avance."
+        faq_a10: "Oui, nous pouvons organiser un transfert en van privé depuis l'aéroport de Krabi (KBV) jusqu'à la villa, y compris la traversée en ferry. Veuillez nous communiquer vos détails de vol à l'avance.",
+        hero_badge: "★ 4.98 / 5.0 Airbnb Superhost • 100% Avis vérifiés",
+        sticky_sub: "4 Chambres • WiFi 500 Mbps",
+        sticky_btn: "Vérifier la disponibilité",
+        whatsapp_tooltip: "Discuter avec nous"
     },
     es: {
         nav_video: "Video",
@@ -341,7 +353,11 @@ const translations = {
         faq_q9: "¿Se incluye el servicio de limpieza y sábanas limpias?",
         faq_a9: "Sí, se proporciona una limpieza profesional antes de la llegada. Para estancias largas, se incluye servicio de limpieza semanal, cambio de toallas y ropa de cama.",
         faq_q10: "¿Pueden organizar el traslado desde el aeropuerto a la villa?",
-        faq_a10: "Sí, podemos ayudar a organizar traslados privados en minivan desde el aeropuerto de Krabi (KBV) directamente a la villa, incluyendo el ferry. Indíquenos los detalles de su vuelo con anticipación."
+        faq_a10: "Sí, podemos ayudar a organizar traslados privados en minivan desde el aeropuerto de Krabi (KBV) directamente a la villa, incluyendo el ferry. Indíquenos los detalles de su vuelo con anticipación.",
+        hero_badge: "★ 4.98 / 5.0 Airbnb Superhost • 100% Reseñas verificadas",
+        sticky_sub: "4 Dormitorios • WiFi 500 Mbps",
+        sticky_btn: "Consultar disponibilidad",
+        whatsapp_tooltip: "Chatea con nosotros"
     }
 };
 
