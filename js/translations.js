@@ -69,7 +69,21 @@ const translations = {
         faq_q2: "Eignet sich die Villa für Remote Work & Workations?",
         faq_a2: "Ja. Mit 500 Mbit/s symmetrischem Glasfaser-Internet und Abdeckung auf allen Balkonen, Terrassen und direkt am Pool eignet sich die Villa ideal für Workations und ungestörte Videokonferenzen.",
         faq_q3: "Wie nah liegt die Villa am Strand?",
-        faq_a3: "Die Villa Carma liegt auf Franks Hill, ca. 300 Meter (5 Gehminuten) entfernt vom Pra Ae Beach (Long Beach)."
+        faq_a3: "Die Villa Carma liegt auf Franks Hill, ca. 300 Meter (5 Gehminuten) entfernt vom Pra Ae Beach (Long Beach).",
+        faq_q4: "Wie viele Personen können in der Villa übernachten?",
+        faq_a4: "Die Villa Carma bietet Platz für bis zu 8 Gäste. Die Raumaufteilung umfasst 4 geräumige, klimatisierte Schlafzimmer mit Kingsize-Betten, aufgeteilt auf zwei komplett unabhängige Etagen.",
+        faq_q5: "Gibt es Parkplätze an der Villa?",
+        faq_a5: "Ja, ein privater, kostenfreier Parkplatz für Autos und Motorräder befindet sich direkt auf dem Grundstück innerhalb der Tore.",
+        faq_q6: "Sind Haustiere in der Villa erlaubt?",
+        faq_a6: "Um eine allergikerfreundliche Umgebung für alle Gäste zu garantieren, sind Haustiere generell nicht gestattet. Kontaktiere uns gerne bei speziellen Anfragen.",
+        faq_q7: "Wie funktionieren Check-in und Check-out?",
+        faq_a7: "Der Check-in ist ab 15:00 Uhr und der Check-out bis 11:00 Uhr möglich. Wir bieten einen flexiblen Self-Check-in über eine sichere Schlüsselbox an, und unser lokaler Gästebetreuer steht jederzeit zur Verfügung.",
+        faq_q8: "Welche Küchenausstattung ist vorhanden?",
+        faq_a8: "Die Villa verfügt über zwei voll ausgestattete Küchen (eine auf jeder Etage) mit Kochplatten, Kühlschränken, Mikrowellen, Öfen, Mixern und hochwertigen italienischen Espresso-/Kaffeemaschinen.",
+        faq_q9: "Sind Reinigung und frische Wäsche inklusive?",
+        faq_a9: "Ja, eine professionelle Reinigung erfolgt vor der Anreise. Bei längeren Aufenthalten sind eine wöchentliche Zwischenreinigung sowie der Wechsel von Handtüchern und Bettwäsche im Preis inbegriffen.",
+        faq_q10: "Kann ein Flughafentransfer zur Villa organisiert werden?",
+        faq_a10: "Ja, wir können gerne einen privaten Van-Transfer direkt vom Flughafen Krabi (KBV) zur Villa für dich organisieren, inklusive der Autofähre. Bitte teile uns deine Flugdaten rechtzeitig mit."
     },
     en: {
         nav_video: "Video",
@@ -141,7 +155,21 @@ const translations = {
         faq_q2: "Is the villa suitable for remote work & workations?",
         faq_a2: "Yes. With 500 Mbps symmetrical fiber internet and complete coverage across all balconies, terraces, and directly at the pool, the villa is ideal for workations and seamless video calls.",
         faq_q3: "How close is the villa to the beach?",
-        faq_a3: "Villa Carma is located on Franks Hill, approximately 300 meters (a 5-minute walk) from Pra Ae Beach (Long Beach)."
+        faq_a3: "Villa Carma is located on Franks Hill, approximately 300 meters (a 5-minute walk) from Pra Ae Beach (Long Beach).",
+        faq_q4: "How many guests can sleep at the villa?",
+        faq_a4: "Villa Carma comfortably accommodates up to 8 guests. The layout offers 4 spacious air-conditioned bedrooms with king-size beds, distributed across two fully independent floors.",
+        faq_q5: "Is there parking available at the property?",
+        faq_a5: "Yes, private free parking is available on-site for cars and motorbikes inside the property gates.",
+        faq_q6: "Are pets allowed in the villa?",
+        faq_a6: "To ensure an allergen-free environment for all guests, pets are generally not allowed. Please contact us for special inquiries.",
+        faq_q7: "How do check-in and check-out work?",
+        faq_a7: "Check-in is from 3:00 PM, and check-out is until 11:00 AM. We offer flexible self-check-in via a secure keybox, and our local guest manager is always available to assist.",
+        faq_q8: "What kitchen equipment is available?",
+        faq_a8: "The villa features two fully equipped kitchens (one on each floor) with stovetops, refrigerators, microwaves, toast ovens, blenders, and high-quality Italian espresso/coffee machines.",
+        faq_q9: "Are cleaning services and fresh linen included?",
+        faq_a9: "Yes, professional cleaning is provided before arrival. For longer stays, regular housekeeping, towel changes, and bed linen refreshes are included once a week.",
+        faq_q10: "Can you arrange airport transfers to the villa?",
+        faq_a10: "Yes, we can help arrange private van transfers directly from Krabi Airport (KBV) to the villa, including the car ferry transition. Please let us know your flight details in advance."
     },
     fr: {
         nav_video: "Vidéo",
@@ -213,7 +241,21 @@ const translations = {
         faq_q2: "La villa est-elle adaptée au travail à distance & workations ?",
         faq_a2: "Oui. Avec un accès Internet fibre symétrique de 500 Mbps et une couverture complète sur tous les balcons, terrasses et au bord de la piscine, la villa est idéale pour les workations et des appels vidéo fluides.",
         faq_q3: "À quelle distance la villa est-elle de la plage ?",
-        faq_a3: "La Villa Carma est située sur Franks Hill, à environ 300 mètres (5 minutes à pied) de Pra Ae Beach (Long Beach)."
+        faq_a3: "La Villa Carma est située sur Franks Hill, à environ 300 mètres (5 minutes à pied) de Pra Ae Beach (Long Beach).",
+        faq_q4: "Combien de personnes peuvent séjourner dans la villa?",
+        faq_a4: "La Villa Carma accueille confortablement jusqu'à 8 personnes. Elle dispose de 4 chambres spacieuses climatisées avec lits king-size, réparties sur deux étages indépendants.",
+        faq_q5: "Y a-t-il un parking disponible à la villa?",
+        faq_a5: "Oui, un parking privé gratuit est disponible sur place pour les voitures et les motos, à l'intérieur du portail.",
+        faq_q6: "Les animaux de compagnie sont-ils admis dans la villa?",
+        faq_a6: "Pour garantir un environnement sans allergènes, les animaux ne sont généralement pas admis. Veuillez nous contacter pour toute demande particulière.",
+        faq_q7: "Comment fonctionnent l'enregistrement et le départ?",
+        faq_a7: "L'enregistrement se fait à partir de 15h00 et le départ jusqu'à 11h00. Nous proposons un self-check-in flexible via une boîte à clés sécurisée, et notre gérant local est toujours disponible.",
+        faq_q8: "Quels sont les équipements de cuisine disponibles?",
+        faq_a8: "La villa dispose de deux cuisines entièrement équipées (une à chaque étage) avec plaques de cuisson, réfrigérateurs, micro-ondes, fours, mixeurs et machines à café expresso italiennes de qualité.",
+        faq_q9: "Le ménage et les draps propres sont-ils inclus?",
+        faq_a9: "Oui, un nettoyage professionnel est effectué avant votre arrivée. Pour les longs séjours, le ménage hebdomadaire, le changement des serviettes et des draps sont inclus une fois par semaine.",
+        faq_q10: "Pouvez-vous organiser les transferts depuis l'aéroport?",
+        faq_a10: "Oui, nous pouvons organiser un transfert en van privé depuis l'aéroport de Krabi (KBV) jusqu'à la villa, y compris la traversée en ferry. Veuillez nous communiquer vos détails de vol à l'avance."
     },
     es: {
         nav_video: "Video",
@@ -285,7 +327,21 @@ const translations = {
         faq_q2: "¿Es la villa adecuada para el trabajo en remoto y workations?",
         faq_a2: "Sí. Con internet de fibra simétrica de 500 Mbps y cobertura completa en todos los balcones, terrazas y junto a la piscina, la villa es ideal para workations y videollamadas fluidas.",
         faq_q3: "¿Qué tan cerca está la villa de la playa?",
-        faq_a3: "Villa Carma se encuentra en Franks Hill, aproximadamente a 300 metros (5 minutos a pie) de Pra Ae Beach (Long Beach)."
+        faq_a3: "Villa Carma se encuentra en Franks Hill, aproximadamente a 300 metros (5 minutos a pie) de Pra Ae Beach (Long Beach).",
+        faq_q4: "¿Cuántas personas pueden dormir en la villa?",
+        faq_a4: "Villa Carma aloja cómodamente hasta 8 personas. Cuenta con 4 amplios dormitorios climatizados con camas king-size, distribuidos en dos plantas independientes.",
+        faq_q5: "¿Hay aparcamiento disponible en la propiedad?",
+        faq_a5: "Sí, hay aparcamiento privado gratuito para coches y motos dentro del recinto de la propiedad.",
+        faq_q6: "¿Se admiten mascotas en la villa?",
+        faq_a6: "Para garantizar un ambiente libre de alérgenos, generalmente no se admiten mascotas. Póngase en contacto con nosotros para consultas especiales.",
+        faq_q7: "¿Cómo funcionan el registro de entrada y salida?",
+        faq_a7: "El registro de entrada es a partir de las 15:00 y el de salida hasta las 11:00. Ofrecemos check-in automático flexible mediante una caja de llaves segura, y nuestro administrador local está a su disposición.",
+        faq_q8: "¿Qué equipamiento de cocina está disponible?",
+        faq_a8: "La villa cuenta con dos cocinas totalmente equipadas (una en cada planta) con estufas, refrigeradores, microondas, hornos, licuadoras y cafeteras italianas de alta calidad.",
+        faq_q9: "¿Se incluye el servicio de limpieza y sábanas limpias?",
+        faq_a9: "Sí, se proporciona una limpieza profesional antes de la llegada. Para estancias largas, se incluye servicio de limpieza semanal, cambio de toallas y ropa de cama.",
+        faq_q10: "¿Pueden organizar el traslado desde el aeropuerto a la villa?",
+        faq_a10: "Sí, podemos ayudar a organizar traslados privados en minivan desde el aeropuerto de Krabi (KBV) directamente a la villa, incluyendo el ferry. Indíquenos los detalles de su vuelo con anticipación."
     }
 };
 

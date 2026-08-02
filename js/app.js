@@ -75,20 +75,8 @@ function applyLanguage(lang) {
         btn.textContent = flags[lang];
     }
 
-    // Update Booking Widget
-    document.querySelectorAll('.calendarWidget').forEach(el => el.classList.remove('active'));
-
-    // Construct ID based on lang
-    const widgetId = `smoobuApartment1361225${lang}`;
-    const widget = document.getElementById(widgetId);
-
-    if (widget) {
-        widget.classList.add('active');
-    } else {
-        // Fallback to EN if specific lang widget missing
-        const fallback = document.getElementById('smoobuApartment1361225en');
-        if (fallback) fallback.classList.add('active');
-    }
+    // Update Booking Widget dynamically (GEO-fix for Smoobu initialization bug)
+    renderSmoobuWidget(lang);
 }
 
 /**
@@ -652,6 +640,40 @@ function initDynamicIframeTitles() {
 }
 
 /**
+ * Renders the Smoobu booking calendar widget dynamically inside a single container.
+ * This resolves the third-party Smoobu bug where only the first widget in the DOM is initialized.
+ */
+function renderSmoobuWidget(lang) {
+    const container = document.getElementById('booking-widget-container');
+    if (!container) return;
+
+    // Clear previous contents
+    container.innerHTML = '';
+
+    // Create the wrapper div
+    const wrapper = document.createElement('div');
+    wrapper.id = `smoobuApartment1361225${lang}`;
+    wrapper.className = 'calendarWidget active';
+
+    // Create the content div
+    const content = document.createElement('div');
+    content.className = 'calendarContent';
+    content.setAttribute('data-load-calendar-url', `https://login.smoobu.com/${lang}/cockpit/widget/single-calendar/1361225`);
+    content.setAttribute('data-verification', '022e859fa2d373cd12706765a434dc71142e1fc247cc80d3399e0d1f3cc04c8f');
+    content.setAttribute('data-baseUrl', 'https://login.smoobu.com');
+    content.setAttribute('data-disable-css', 'false');
+
+    wrapper.appendChild(content);
+    container.appendChild(wrapper);
+
+    // If the Smoobu script is already loaded, trigger initialization manually
+    if (window.CalendarWidget) {
+        window.isSmoobuWidgetInitialized = false; // Reset initialization block
+        window.CalendarWidget.initializeCalender();
+    }
+}
+
+/**
  * Lazy loads the third-party Smoobu booking calendar widget script.
  * Uses an IntersectionObserver to dynamically inject the script only when the user scrolls near the booking section.
  */
@@ -662,6 +684,10 @@ function initBookingWidgetLazy() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
+                // Initialize the container structure for the current active language
+                const currentLang = localStorage.getItem('vilacarma_lang') || 'en';
+                renderSmoobuWidget(currentLang);
+
                 // Dynamically inject the third-party Smoobu script
                 const script = document.createElement('script');
                 script.src = 'https://login.smoobu.com/js/Apartment/CalendarWidget.js';
