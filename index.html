@@ -7,7 +7,20 @@
     <meta name="description"
         content="The Carma | Luxury workation pool villa on Koh Lanta, Thailand. High-speed fiber WiFi, sea views, private infinity pool. Perfect for digital nomads & families.">
     <title>The Carma Villa Koh Lanta | Luxury Poolvilla Workation</title>
+    
+    <!-- Canonical & Hreflang for International SEO -->
     <link rel="canonical" href="https://villacarma.com/">
+    <link rel="alternate" hreflang="x-default" href="https://villacarma.com/">
+    <link rel="alternate" hreflang="en" href="https://villacarma.com/">
+    <link rel="alternate" hreflang="de" href="https://villacarma.com/">
+    <link rel="alternate" hreflang="fr" href="https://villacarma.com/">
+    <link rel="alternate" hreflang="es" href="https://villacarma.com/">
+
+    <!-- Geo Metadata for Local Search / GEO -->
+    <meta name="geo.region" content="TH-81">
+    <meta name="geo.placename" content="Koh Lanta, Krabi, Thailand">
+    <meta name="geo.position" content="7.593497;99.037563">
+    <meta name="ICBM" content="7.593497, 99.037563">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -39,12 +52,17 @@
     <!-- Preload LCP Hero Image -->
     <link rel="preload" href="images/house2.webp" as="image" type="image/webp" fetchpriority="high">
 
-    <!-- Design System: Fonts -->
+    <!-- Design System: Fonts (Asynchronous Non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+            rel="stylesheet">
+    </noscript>
 
     <!-- Core Styles -->
     <link rel="stylesheet" href="css/main.css">
@@ -249,12 +267,12 @@
             <div class="hero-bg" id="hero-slider">
                 <!-- Slider Images -->
                 <img src="images/house2.webp" class="hero-slide active" alt="Villa Carma Exterior"
-                    style="object-fit: cover;" fetchpriority="high">
+                    style="object-fit: cover;" fetchpriority="high" width="1920" height="1080">
                 <img src="images/livingroom_up2.webp" class="hero-slide" alt="Living Room Upper Floor"
-                    style="object-fit: cover;" loading="lazy">
-                <img src="images/view2.webp" class="hero-slide" alt="Sea View" style="object-fit: cover;" loading="lazy">
-                <img src="images/terasse_up.webp" class="hero-slide" alt="Upper Terrace" style="object-fit: cover;" loading="lazy">
-                <img src="images/terasse_down.webp" class="hero-slide" alt="Lower Terrace" style="object-fit: cover;" loading="lazy">
+                    style="object-fit: cover;" loading="lazy" width="1920" height="1080">
+                <img src="images/view2.webp" class="hero-slide" alt="Sea View" style="object-fit: cover;" loading="lazy" width="1920" height="1080">
+                <img src="images/terasse_up.webp" class="hero-slide" alt="Upper Terrace" style="object-fit: cover;" loading="lazy" width="1920" height="1080">
+                <img src="images/terasse_down.webp" class="hero-slide" alt="Lower Terrace" style="object-fit: cover;" loading="lazy" width="1920" height="1080">
                 <div class="overlay"></div>
             </div>
 
@@ -356,7 +374,7 @@
                 </div>
                 <div class="intro-image" style="flex: 1;">
                     <img src="images/livingroom_down5.webp" alt="Modern Interior Living Room"
-                        style="border-radius: var(--radius-md); box-shadow: var(--shadow-soft);">
+                        style="border-radius: var(--radius-md); box-shadow: var(--shadow-soft);" loading="lazy" width="800" height="600">
                 </div>
             </div>
         </section>
@@ -394,37 +412,37 @@
                 <div class="grid-3">
                     <article class="feature-card">
                         <img src="images/view1.webp" alt="Sunset View"
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;" loading="lazy" width="400" height="200">
                         <h3 data-i18n="feat_sunset">Sunset over Phi-Phi</h3>
                         <p data-i18n="feat_sunset_desc">Daily front-row seat for spectacular sunsets over the famous Phi Phi Islands.</p>
                     </article>
                     <article class="feature-card">
                         <img src="images/livingroom_down3.webp" alt="Workspace with View"
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;" loading="lazy" width="400" height="200">
                         <h3 data-i18n="feat_fiber">High-Speed Fiber</h3>
                         <p data-i18n="feat_fiber_desc">500 Mbps WiFi. Smooth Zoom calls, even by the pool.</p>
                     </article>
                     <article class="feature-card">
                         <img src="images/coffeemachine1.webp" alt="Italian Coffee Machine"
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;" loading="lazy" width="400" height="200">
                         <h3 data-i18n="feat_coffee">Italian Espresso</h3>
                         <p data-i18n="feat_coffee_desc">Fully automatic coffee machine for the perfect start. Plus: 2 fully equipped kitchens.</p>
                     </article>
                     <article class="feature-card">
                         <img src="images/sala1.webp" alt="Private Sala"
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;" loading="lazy" width="400" height="200">
                         <h3 data-i18n="feat_pool">Infinity Pool & Sala</h3>
                         <p data-i18n="feat_pool_desc">Private saltwater pool and traditional Sala with sunbeds for total relaxation.</p>
                     </article>
                     <article class="feature-card">
                         <img src="images/bedroom_up_front1.webp" alt="Master Bedroom"
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;" loading="lazy" width="400" height="200">
                         <h3 data-i18n="feat_aircon">Air Conditioned</h3>
                         <p data-i18n="feat_aircon_desc">Air conditioning in all 4 bedrooms for restful sleep.</p>
                     </article>
                     <article class="feature-card">
                         <img src="images/livingroom_up1.webp" alt="Smart Entertainment Area"
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;" loading="lazy" width="400" height="200">
                         <h3 data-i18n="feat_smarttv">Smart Entertainment</h3>
                         <p data-i18n="feat_smarttv_desc">Large Smart TVs on every floor for cozy movie nights.</p>
                     </article>
