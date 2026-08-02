@@ -1469,26 +1469,28 @@ main {
 
 /* --- CRO COMPONENTS --- */
 
-/* Hero Superhost Rating Badge (High Visibility) */
+/* Hero Superhost Rating Badge (Luxury Gold Glassmorphism) */
 .hero-superhost-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    background: linear-gradient(135deg, #FF385C 0%, #E00B41 100%);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 0.5rem 1.2rem;
+    background: rgba(20, 20, 20, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    padding: 0.45rem 1.1rem;
     border-radius: 50px;
-    color: #FFD700;
-    font-size: 0.9rem;
-    font-weight: 700;
+    color: #f59e0b;
+    font-size: 0.85rem;
+    font-weight: 600;
     margin-bottom: 1.25rem;
-    box-shadow: 0 6px 20px rgba(255, 56, 92, 0.45);
-    letter-spacing: 0.01em;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 12px rgba(212, 175, 55, 0.15);
 }
 
 .hero-superhost-badge span {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 /* Sticky Mobile Booking Bar */
