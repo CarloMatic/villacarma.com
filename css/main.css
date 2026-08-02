@@ -1347,3 +1347,122 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
+
+/* --- KEY FACTS TABLE --- */
+.key-facts-table-wrapper {
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.facts-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.key-facts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.key-facts-table th,
+.key-facts-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+.key-facts-table th {
+    font-weight: 600;
+    color: var(--color-text);
+    border-bottom: 2px solid var(--color-primary);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.key-facts-table td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.key-facts-table tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .key-facts-table th,
+    .key-facts-table td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* --- FAQ SECTION --- */
+.faq {
+    background: var(--color-white);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 3rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background: var(--color-bg-light);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item[open] {
+    box-shadow: var(--shadow-soft);
+}
+
+.faq-question {
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    outline: none;
+    transition: color 0.2s;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] .faq-question::after {
+    transform: translateY(-50%) rotate(45deg);
+    content: '+';
+}
+
+.faq-answer {
+    padding: 0 1.5rem 1.25rem 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
