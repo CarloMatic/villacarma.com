@@ -43,7 +43,7 @@ window.switchLang = function (lang) {
 }
 
 function initLanguage() {
-    const savedLang = localStorage.getItem('vilacarma_lang') || 'de';
+    const savedLang = localStorage.getItem('vilacarma_lang') || 'en';
     applyLanguage(savedLang);
 }
 
@@ -85,8 +85,8 @@ function applyLanguage(lang) {
     if (widget) {
         widget.classList.add('active');
     } else {
-        // Fallback to DE if specific lang widget missing
-        const fallback = document.getElementById('smoobuApartment1361225de');
+        // Fallback to EN if specific lang widget missing
+        const fallback = document.getElementById('smoobuApartment1361225en');
         if (fallback) fallback.classList.add('active');
     }
 }
