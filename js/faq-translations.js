@@ -11,21 +11,20 @@ const faqTranslations = {
         nav_overview: "Übersicht",
         nav_rules: "Wichtige Regeln",
         nav_az: "A-Z Verzeichnis",
-        nav_contact: "Kontakt & Hilfe",
+        nav_contact: "Notfall & Hilfe",
         nav_book: "Buchen",
         
         hero_badge: "Offizieller Gäste-Leitfaden",
         hero_title: "Willkommen in The Carma",
         hero_subtitle: "Wir begrüßen Sie herzlich als unsere Gäste und wünschen Ihnen einen traumhaften, unvergesslichen Aufenthalt auf Koh Lanta.",
-        hero_notice: "Bitte nutzen Sie unseren WhatsApp-Kontakt, falls Sie Fragen, Ausflugswünsche, Transfers oder Anliegen haben.",
+        hero_notice: "Hier finden Sie alle wichtigen Informationen, Hausregeln und Empfehlungen für Ihren Aufenthalt.",
         
-        btn_whatsapp: "WhatsApp Concierge",
-        btn_call_doctor: "Dr. Pad Klinik anrufen",
+        btn_call_doctor: "Dr. Pad Klinik anrufen (+66 95 515 9555)",
         btn_expand_all: "Alle öffnen",
         btn_collapse_all: "Alle schließen",
         
         search_placeholder: "Thema, Stichwort oder Frage suchen (z.B. Strom, Affen, Pool, Arzt)...",
-        search_no_results: "Keine passenden Einträge gefunden. Bitte kontaktieren Sie uns direkt per WhatsApp!",
+        search_no_results: "Keine passenden Einträge gefunden. Bitte prüfen Sie Ihre Suchbegriffe.",
         search_clear: "Suche zurücksetzen",
         
         filter_all: "Alle Themen",
@@ -70,7 +69,7 @@ const faqTranslations = {
         item_apotheke_desc: "Die nächstgelegene Apotheke befindet sich unten an der Hauptstraße: „Longbeach Pharmacy“ (ca. 5 Minuten Fußweg bzw. 1 Minute mit dem Roller). Dort finden Sie gängige Medikamente, Verbandszeug und Mückenschutz.",
         
         item_ausfluege_title: "Ausflüge & Touren",
-        item_ausfluege_desc: "Wir kümmern uns sehr gerne um die Organisation Ihrer Ausflüge (z.B. 4-Islands-Tour, Koh Rok, Phi Phi Islands, Mangroven-Kajaktouren oder Tauchausflüge). Schreiben Sie uns einfach auf WhatsApp. Selbstverständlich steht es Ihnen frei, andere örtliche Reisebüros zu beauftragen.",
+        item_ausfluege_desc: "Wir unterstützen Sie gerne bei der Vermittlung von Ausflügen (z.B. 4-Islands-Tour, Koh Rok, Phi Phi Islands, Mangroven-Kajaktouren oder Tauchausflüge). Sprechen Sie uns einfach an. Selbstverständlich steht es Ihnen frei, andere örtliche Reisebüros zu beauftragen.",
         
         item_autoverleih_title: "Autoverleih",
         item_autoverleih_desc: "Wenn Sie für Ihren Aufenthalt ein Auto mieten möchten, sprechen Sie uns gerne an. Wir arbeiten mit zuverlässigen lokalen Partnern zusammen und organisieren die Fahrzeugübergabe direkt an die Villa.",
@@ -84,7 +83,7 @@ const faqTranslations = {
         
         // E
         item_elektrizitaet_title: "Elektrizität & Inselstromnetz",
-        item_elektrizitaet_desc: "Bitte beachten Sie, dass wir uns auf einer tropischen Insel befinden. Das Stromnetz auf Koh Lanta ist noch im Ausbau und es kann gelegentlich zu kurzen Stromschwankungen oder kurzen Ausfällen kommen. Das ist inselweit normal und dauert meist nur wenige Minuten.\n\nGelegentlich führt die Behörde Wartungsarbeiten durch; in diesem Fall informieren wir Sie vorab so schnell wie möglich.\n\n⚠️ Wichtig für Wasserversorgung: Unser Wassersystem arbeitet mit elektrischen Druckpumpen. Bei Stromausfall fließt vorübergehend kein Wasser. Sollten Sie einen Hahn geöffnet haben und kein Wasser kommen, schließen Sie ihn bitte sofort wieder, damit es später nicht überläuft!\n\nNeustart von Geräten: Falls sich Router, Wasserpumpe oder Warmwasser nach einem Ausfall nicht selbst starten, ziehen Sie den Stecker für ca. 5 Minuten und stecken ihn wieder ein. Sollte es weiterhin klemmen, kontaktieren Sie uns umgehend.",
+        item_elektrizitaet_desc: "Bitte beachten Sie, dass wir uns auf einer tropischen Insel befinden. Das Stromnetz auf Koh Lanta ist noch im Ausbau und es kann gelegentlich zu kurzen Stromschwankungen oder kurzen Ausfällen kommen. Das ist inselweit normal und dauert meist nur wenige Minuten.\n\nGelegentlich führt die Behörde Wartungsarbeiten durch; in diesem Fall informieren wir Sie vorab so schnell wie möglich.\n\n⚠️ Wichtig für Wasserversorgung: Unser Wassersystem arbeitet mit elektrischen Druckpumpen. Bei Stromausfall fließt vorübergehend kein Wasser. Sollten Sie einen Hahn geöffnet haben und kein Wasser kommen, schließen Sie ihn bitte sofort wieder, damit es später nicht überläuft!\n\nNeustart von Geräten: Falls sich Router, Wasserpumpe oder Warmwasser nach einem Ausfall nicht selbst starten, ziehen Sie den Stecker für ca. 5 Minuten und stecken ihn wieder ein. Sollte es weiterhin klemmen, wenden Sie sich bitte an uns.",
         
         // G
         item_garten_title: "Gartenarbeiten",
@@ -126,7 +125,7 @@ const faqTranslations = {
         
         // R
         item_roller_title: "Rollerverleih (Scooter)",
-        item_roller_desc: "Ein Roller ist das beliebteste Fortbewegungsmittel auf Koh Lanta. Wenn Sie Roller mieten möchten, kontaktieren Sie uns auf WhatsApp – wir organisieren einwandfreie Roller mit Helmen und Anlieferung an die Villa.",
+        item_roller_desc: "Ein Roller ist das beliebteste Fortbewegungsmittel auf Koh Lanta. Wenn Sie Roller mieten möchten, sprechen Sie uns gerne an – wir unterstützen Sie bei der Vermittlung einwandfreier Roller mit Helmen und Anlieferung an die Villa.",
         
         item_rauchen_title: "Rauchverbot im Innenbereich",
         item_rauchen_desc: "Das Rauchen im gesamten Innenbereich der Villa ist strengstens untersagt. Auf den Terrassen, Balkonen und in der Sala im Freien ist das Rauchen gestattet. Bitte nutzen Sie die bereitstehenden Aschenbecher und achten Sie auf Funkenflug.",
@@ -142,7 +141,7 @@ const faqTranslations = {
         item_sonnenschirme_desc: "Aufgrund plötzlicher tropischer Windböen bitten wir Sie, alle Sonnenschirme stets zu schließen, wenn Sie das Haus verlassen oder wenn Wind aufkommt.",
         
         item_sauberkeit_title: "Sauberkeit & Sorgfaltspflicht",
-        item_sauberkeit_desc: "The Carma ist ein privates Luxusanwesen. Bitte behandeln Sie das Haus und das Mobiliar pfleglich und hinterlassen Sie es ordentlich. Schäden bitten wir sofort per WhatsApp zu melden.",
+        item_sauberkeit_desc: "The Carma ist ein privates Luxusanwesen. Bitte behandeln Sie das Haus und das Mobiliar pfleglich und hinterlassen Sie es ordentlich. Schäden bitten wir unverzüglich zu melden.",
         
         item_schaeden_title: "Schadensmeldung",
         item_schaeden_desc: "Ein Missgeschick kann jedem passieren. Melden Sie uns Schäden bitte unverzüglich oder spätestens beim Check-Out. Kleinere Schäden werden unkompliziert mit der Kaution verrechnet; größere Schäden wickeln wir über die Versicherung der Buchungsportale ab.",
@@ -152,21 +151,21 @@ const faqTranslations = {
         
         // T
         item_trinkwasser_title: "Kostenloses Trinkwasser",
-        item_trinkwasser_desc: "Auf beiden Etagen stellen wir Ihnen kostenlos gefiltertes Trinkwasser über bequeme Wasserspender zur Verfügung. Geben Sie uns per WhatsApp Bescheid, sobald ein Wasserbehälter zur Neige geht – wir bringen sofort Nachschub.",
+        item_trinkwasser_desc: "Auf beiden Etagen stellen wir Ihnen kostenlos gefiltertes Trinkwasser über bequeme Wasserspender zur Verfügung. Geben Sie uns einfach Bescheid, sobald ein Wasserbehälter zur Neige geht – wir bringen gerne Nachschub.",
         
         // W
         item_wasser_title: "Leitungswasser & Eiswürfel",
         item_wasser_desc: "Unser Leitungswasser stammt aus einem Tiefbrunnen auf dem Hügel. Es ist hervorragend zum Duschen und Zähneputzen geeignet, sollte aber NICHT getrunken werden.\n\nNutzen Sie zum Trinken sowie für Tee und Kaffee bitte ausschließlich das bereitgestellte Spender- oder Flaschenwasser. TIPP zu Eiswürfeln: In Restaurants und bei 7-Eleven hergestelltes Eis wird in Thailand aus zertifiziertem, gefiltertem Wasser produziert und ist völlig unbedenklich. In beiden Kühlschränken der Villa können Sie zudem selbst Eiswürfel aus Trinkwasser zubereiten.",
         
         item_waesche_title: "Wäsche & Waschmaschinen",
-        item_waesche_desc: "Auf jeder Etage steht eine eigene Waschmaschine bereit (wir empfehlen die untere Maschine für Kleidung). Wäscheständer und Wäscheklammern befinden sich oben im Badezimmer und unten am Poolbereich hinter dem Haus. Waschmittel erhalten Sie in jedem Minimarkt. Alternativ vermitteln wir Ihnen gerne einen erstklassigen Wäsche-Service (Laundry Service) auf der Insel.",
+        item_waesche_desc: "Auf jeder Etage steht eine eigene Waschmaschine bereit (wir empfehlen die untere Maschine für Kleidung). Wäscheständer und Wäscheklammern befinden sich oben im Badezimmer und unten am Poolbereich hinter dem Haus. Waschmittel erhalten Sie in jedem Minimarkt. Alternativ vermitteln wir Ihnen gerne einen Wäsche-Service (Laundry Service) auf der Insel.",
         
         // Emergency Card
         emergency_title: "Wichtige Notfall-Kontakte auf Koh Lanta",
         emergency_doc: "Dr. Pad Klinik (Privatarzt): +66 95 515 9555",
         emergency_hospital: "Koh Lanta Hospital (Inselkrankenhaus): 075 697 017",
         emergency_police: "Touristenpolizei: 1155 (Englischsprachig)",
-        emergency_whatsapp: "Villa Carma Host / Manager: WhatsApp Direktkontakt",
+        emergency_ambulance: "Notruf Rettungsdienst (Ambulanz): 1669",
         
         footer_back_top: "Nach oben scrollen",
         footer_home_link: "Startseite villacarma.com",
@@ -181,21 +180,20 @@ const faqTranslations = {
         nav_overview: "Overview",
         nav_rules: "Important Rules",
         nav_az: "A-Z Directory",
-        nav_contact: "Contact & Help",
+        nav_contact: "Emergency & Help",
         nav_book: "Book Now",
         
         hero_badge: "Official Guest Directory",
         hero_title: "Welcome to The Carma",
         hero_subtitle: "We warmly welcome you as our guests and wish you a truly magical, unforgettable stay on Koh Lanta.",
-        hero_notice: "Please feel free to message us on WhatsApp whenever you need information, boat transfers, tour recommendations, or on-site assistance.",
+        hero_notice: "Here you will find all important information, house rules, and recommendations for your stay.",
         
-        btn_whatsapp: "WhatsApp Concierge",
-        btn_call_doctor: "Call Dr. Pad Clinic",
+        btn_call_doctor: "Call Dr. Pad Clinic (+66 95 515 9555)",
         btn_expand_all: "Expand All",
         btn_collapse_all: "Collapse All",
         
         search_placeholder: "Search topic, keyword or question (e.g. electricity, monkeys, pool, doctor)...",
-        search_no_results: "No matching entries found. Please message our host directly on WhatsApp!",
+        search_no_results: "No matching entries found. Please check your search terms.",
         search_clear: "Reset search",
         
         filter_all: "All Topics",
@@ -240,10 +238,10 @@ const faqTranslations = {
         item_apotheke_desc: "The nearest pharmacy is located on the main road: 'Longbeach Pharmacy' (approx. 5 minutes walk or 1 minute by scooter). They stock common travel medicine, first-aid supplies, and mosquito repellents.",
         
         item_ausfluege_title: "Tours & Excursions",
-        item_ausfluege_desc: "We are more than happy to help arrange your island excursions (e.g. 4-Islands speedboat tour, Koh Rok snorkeling, Phi Phi Islands, mangrove kayaking, or scuba diving). Simply message us on WhatsApp. You are of course free to book with external agencies as well.",
+        item_ausfluege_desc: "We are happy to assist with information regarding island excursions (e.g. 4-Islands speedboat tour, Koh Rok snorkeling, Phi Phi Islands, mangrove kayaking, or scuba diving). Feel free to ask us anytime. You are of course free to book with external agencies as well.",
         
         item_autoverleih_title: "Car Rental",
-        item_autoverleih_desc: "If you require a rental car during your stay, contact us on WhatsApp. We partner with reliable local car rental providers and can arrange drop-off and pick-up directly at the villa.",
+        item_autoverleih_desc: "If you require a rental car during your stay, feel free to contact us. We can connect you with reliable local car rental providers.",
         
         item_arzt_title: "Doctor & Medical Care",
         item_arzt_desc: "If you feel unwell or need medical consultation, we highly recommend Dr. Pad Clinic:\n\n• Dr. Pad Clinic: Tel: 095 515 9555 (+66 95 515 9555)\n• Website: https://www.drpadclinic.com/\n\nDr. Pad speaks fluent English and provides dependable, modern medical care right here on Koh Lanta.",
@@ -254,7 +252,7 @@ const faqTranslations = {
         
         // E
         item_elektrizitaet_title: "Electricity & Island Grid Quirks",
-        item_elektrizitaet_desc: "Please remember that Koh Lanta is a tropical island with evolving power infrastructure. Intermittent power fluctuations or short blackouts can occur. These are normal island occurrences and typically last only a few minutes.\n\nOccasionally, the local electrical authority carries out scheduled maintenance; we will notify you immediately in such cases.\n\n⚠️ Crucial for water supply: Our fresh water system relies on electric pressure pumps. During a power outage, water will temporarily stop flowing. If you turned on a tap while the power was out, remember to close it immediately so it doesn't overflow when power resumes!\n\nRebooting appliances: If the WiFi router, water pump, or hot water heater do not restart automatically after an outage, unplug the device for 5 minutes and plug it back in. If issues persist, please message us.",
+        item_elektrizitaet_desc: "Please remember that Koh Lanta is a tropical island with evolving power infrastructure. Intermittent power fluctuations or short blackouts can occur. These are normal island occurrences and typically last only a few minutes.\n\nOccasionally, the local electrical authority carries out scheduled maintenance; we will notify you immediately in such cases.\n\n⚠️ Crucial for water supply: Our fresh water system relies on electric pressure pumps. During a power outage, water will temporarily stop flowing. If you turned on a tap while the power was out, remember to close it immediately so it doesn't overflow when power resumes!\n\nRebooting appliances: If the WiFi router, water pump, or hot water heater do not restart automatically after an outage, unplug the device for 5 minutes and plug it back in. If issues persist, please let us know.",
         
         // G
         item_garten_title: "Garden & Grounds Care",
@@ -296,7 +294,7 @@ const faqTranslations = {
         
         // R
         item_roller_title: "Scooter Rental",
-        item_roller_desc: "Scooters are the easiest way to explore Koh Lanta. Contact us on WhatsApp if you wish to rent quality, well-maintained scooters with helmets delivered right to the villa.",
+        item_roller_desc: "Scooters are the easiest way to explore Koh Lanta. If you wish to rent quality scooters with helmets delivered to the villa, we can recommend local rental partners.",
         
         item_rauchen_title: "No-Smoking Indoor Policy",
         item_rauchen_desc: "Smoking inside any part of the villa is strictly forbidden. Smoking is allowed in open-air outdoor areas (terraces, balconies, and the sala). Please always use the provided ashtrays and ensure butts are safely extinguished.",
@@ -322,21 +320,21 @@ const faqTranslations = {
         
         // T
         item_trinkwasser_title: "Complimentary Drinking Water",
-        item_trinkwasser_desc: "We provide free purified drinking water via high-capacity dispensers on both floors. Send us a quick WhatsApp message when you need a refill, and we will bring new bottles immediately.",
+        item_trinkwasser_desc: "We provide free purified drinking water via high-capacity dispensers on both floors. Let us know when you need a refill, and we will bring new bottles.",
         
         // W
         item_wasser_title: "Tap Water & Ice Cubes",
         item_wasser_desc: "Our tap water is pumped from a deep mountain well. It is safe for showering and brushing teeth, but is NOT suitable for drinking.\n\nPlease use bottled or dispenser water for drinking, cooking, coffee, and tea. TIP on ice cubes: In Thailand, ice at restaurants and 7-Eleven is commercially manufactured using purified water and is completely safe. You can also make ice in the villa freezers using dispenser water.",
         
         item_waesche_title: "Laundry & Washing Machines",
-        item_waesche_desc: "Each floor has its own washing machine (we recommend the lower-floor unit for clothing). Drying racks and pegs are located upstairs in the bathroom and downstairs behind the villa by the pool. Detergent is readily available at local minimarts. We can also recommend professional island laundry services via WhatsApp.",
+        item_waesche_desc: "Each floor has its own washing machine (we recommend the lower-floor unit for clothing). Drying racks and pegs are located upstairs in the bathroom and downstairs behind the villa by the pool. Detergent is readily available at local minimarts. Professional laundry services are also available on the island.",
         
         // Emergency Card
         emergency_title: "Important Emergency Contacts on Koh Lanta",
         emergency_doc: "Dr. Pad Clinic (Private GP): +66 95 515 9555",
         emergency_hospital: "Koh Lanta Hospital: 075 697 017",
         emergency_police: "Tourist Police: 1155 (English speaking)",
-        emergency_whatsapp: "Villa Carma Host / Manager: Direct WhatsApp",
+        emergency_ambulance: "Medical Emergency Ambulance: 1669",
         
         footer_back_top: "Back to top",
         footer_home_link: "Main Page villacarma.com",
@@ -351,21 +349,20 @@ const faqTranslations = {
         nav_overview: "Aperçu",
         nav_rules: "Règles Importantes",
         nav_az: "Répertoire A-Z",
-        nav_contact: "Contact & Aide",
+        nav_contact: "Urgences & Aide",
         nav_book: "Réserver",
         
         hero_badge: "Guide Officiel des Voyageurs",
         hero_title: "Bienvenue à The Carma",
         hero_subtitle: "Nous sommes ravis de vous accueillir et vous souhaitons un séjour magique et inoubliable à Koh Lanta.",
-        hero_notice: "N'hésitez pas à nous contacter sur WhatsApp pour toute demande d'information, transferts, excursions ou assistance sur place.",
+        hero_notice: "Vous trouverez ici toutes les informations importantes, le règlement intérieur et les recommandations pour votre séjour.",
         
-        btn_whatsapp: "Concierge WhatsApp",
-        btn_call_doctor: "Appeler Clinique Dr. Pad",
+        btn_call_doctor: "Appeler Clinique Dr. Pad (+66 95 515 9555)",
         btn_expand_all: "Tout ouvrir",
         btn_collapse_all: "Tout fermer",
         
         search_placeholder: "Rechercher un sujet (ex. électricité, singes, piscine, médecin)...",
-        search_no_results: "Aucun résultat trouvé. Contactez-nous directement sur WhatsApp !",
+        search_no_results: "Aucun résultat trouvé. Veuillez vérifier vos termes de recherche.",
         search_clear: "Réinitialiser",
         
         filter_all: "Tous les sujets",
@@ -409,10 +406,10 @@ const faqTranslations = {
         item_apotheke_desc: "La pharmacie la plus proche se trouve sur la route principale : « Longbeach Pharmacy » (environ 5 min à pied ou 1 min en scooter).",
         
         item_ausfluege_title: "Excursions & Activités",
-        item_ausfluege_desc: "Nous organisons volontiers vos sorties en bateau (4 Îles, Koh Rok, îles Phi Phi, kayak dans les mangroves). Contactez-nous par WhatsApp.",
+        item_ausfluege_desc: "Nous vous renseignons volontiers sur les sorties en bateau (4 Îles, Koh Rok, îles Phi Phi, kayak dans les mangroves). N'hésitez pas à nous demander.",
         
         item_autoverleih_title: "Location de Voiture",
-        item_autoverleih_desc: "Si vous souhaitez louer une voiture, nous pouvons la réserver auprès de partenaires fiables et la faire livrer directement à la villa.",
+        item_autoverleih_desc: "Si vous souhaitez louer une voiture, nous pouvons vous recommander des agences de location locales fiables.",
         
         item_arzt_title: "Médecin & Soins Médicaux",
         item_arzt_desc: "En cas de besoin médical, nous recommandons le cabinet du Dr Pad :\n\n• Dr. Pad Clinic : Tél : 095 515 9555 (+66 95 515 9555)\n• Site web : https://www.drpadclinic.com/\n\nLe Dr Pad parle un anglais impeccable et offre d'excellents soins.",
@@ -457,7 +454,7 @@ const faqTranslations = {
         item_pool_desc: "La piscine est entretenue tous les 2 à 3 jours. Merci de vous doucher avant la baignade. Les plongeons sont strictement interdits.",
         
         item_roller_title: "Location de Scooters",
-        item_roller_desc: "Nous pouvons vous faire livrer des scooters fiables avec casques directement à la villa. Contactez-nous sur WhatsApp.",
+        item_roller_desc: "Si vous souhaitez louer un scooter, nous pouvons vous indiquer des partenaires locaux fiables.",
         
         item_rauchen_title: "Interdiction de Fumer à l'Intérieur",
         item_rauchen_desc: "Fumer est formellement interdit à l'intérieur. Vous pouvez fumer sur les terrasses et balcons extérieurs en utilisant les cendriers.",
@@ -481,7 +478,7 @@ const faqTranslations = {
         item_spuelmaschine_desc: "Utilisez exclusivement les tablettes fournies par nos soins pour éviter toute panne.",
         
         item_trinkwasser_title: "Eau Potable Gratuite",
-        item_trinkwasser_desc: "Des fontaines d'eau potable purifiée sont à disposition à chaque étage. Dites-le nous sur WhatsApp pour une recharge immédiate.",
+        item_trinkwasser_desc: "Des fontaines d'eau potable purifiée sont à disposition à chaque étage. Faites-nous signe dès qu'une bonbonne doit être remplacée.",
         
         item_wasser_title: "Eau du Robinet & Glaçons",
         item_wasser_desc: "L'eau du robinet provient d'un puits de montagne. Elle convient pour la douche et les dents mais n'est PAS potable. Les glaçons en sachets du 7-Eleven sont 100% sûrs.",
@@ -493,7 +490,7 @@ const faqTranslations = {
         emergency_doc: "Clinique Dr Pad (Médecin privé) : +66 95 515 9555",
         emergency_hospital: "Hôpital de Koh Lanta : 075 697 017",
         emergency_police: "Police Touristique : 1155 (En anglais)",
-        emergency_whatsapp: "Hôte Villa Carma : WhatsApp Direct",
+        emergency_ambulance: "Urgences Médicales (Ambulance) : 1669",
         
         footer_back_top: "Haut de page",
         footer_home_link: "Accueil villacarma.com",
@@ -508,21 +505,20 @@ const faqTranslations = {
         nav_overview: "Resumen",
         nav_rules: "Normas Importantes",
         nav_az: "Directorio A-Z",
-        nav_contact: "Contacto y Ayuda",
+        nav_contact: "Emergencias y Ayuda",
         nav_book: "Reservar",
         
         hero_badge: "Guía Oficial del Huésped",
         hero_title: "Bienvenidos a The Carma",
         hero_subtitle: "Le damos una cálida bienvenida como nuestros huéspedes y le deseamos una estancia mágica e inolvidable en Koh Lanta.",
-        hero_notice: "No dude en escribirnos por WhatsApp siempre que necesite información, traslados, excursiones o asistencia en la villa.",
+        hero_notice: "Aquí encontrará toda la información importante, las normas de la casa y las recomendaciones para su estancia.",
         
-        btn_whatsapp: "Conserje WhatsApp",
-        btn_call_doctor: "Llamar Clínica Dr. Pad",
+        btn_call_doctor: "Llamar Clínica Dr. Pad (+66 95 515 9555)",
         btn_expand_all: "Abrir todo",
         btn_collapse_all: "Cerrar todo",
         
         search_placeholder: "Buscar tema o pregunta (p. ej. electricidad, monos, piscina, médico)...",
-        search_no_results: "No se encontraron coincidencias. ¡Contáctenos directamente por WhatsApp!",
+        search_no_results: "No se encontraron coincidencias. Por favor verifique los términos de búsqueda.",
         search_clear: "Restablecer búsqueda",
         
         filter_all: "Todos los temas",
@@ -566,10 +562,10 @@ const faqTranslations = {
         item_apotheke_desc: "La farmacia más cercana está en la carretera principal: 'Longbeach Pharmacy' (a unos 5 minutos a pie o 1 minuto en moto).",
         
         item_ausfluege_title: "Excursiones y Tours",
-        item_ausfluege_desc: "Con gusto organizamos sus paseos en barco (Tour de 4 Islas, Koh Rok, Phi Phi, kayak en manglares). Contáctenos por WhatsApp.",
+        item_ausfluege_desc: "Con gusto le orientamos sobre paseos en barco (Tour de 4 Islas, Koh Rok, Phi Phi, kayak en manglares). Pregúntenos cuando lo desee.",
         
         item_autoverleih_title: "Alquiler de Coches",
-        item_autoverleih_desc: "Si necesita un coche de alquiler, avísenos y lo organizaremos con entrega directa en la villa.",
+        item_autoverleih_desc: "Si necesita un coche de alquiler, podemos recomendarle agencias locales de confianza.",
         
         item_arzt_title: "Médico y Salud",
         item_arzt_desc: "Para cualquier atención médica recomendamos la clínica del Dr. Pad:\n\n• Dr. Pad Clinic: Tel: 095 515 9555 (+66 95 515 9555)\n• Sitio web: https://www.drpadclinic.com/\n\nEl Dr. Pad habla un excelente inglés y ofrece atención médica moderna.",
@@ -614,7 +610,7 @@ const faqTranslations = {
         item_pool_desc: "Se realiza mantenimiento cada 2-3 días. Dúchese antes de bañarse para mantener el agua limpia. Está estrictamente prohibido tirarse de cabeza por seguridad.",
         
         item_roller_title: "Alquiler de Scooters / Motos",
-        item_roller_desc: "Es la forma más fácil de moverse por la isla. Escríbanos por WhatsApp para coordinar motos fiables con cascos entregadas en la villa.",
+        item_roller_desc: "Es la forma más fácil de moverse por la isla. Le orientamos sobre las mejores opciones de alquiler local con entrega en la villa.",
         
         item_rauchen_title: "Prohibido Fumar en Interiores",
         item_rauchen_desc: "Está totalmente prohibido fumar en el interior. Se permite fumar en terrazas y balcones utilizando los ceniceros.",
@@ -638,19 +634,20 @@ const faqTranslations = {
         item_spuelmaschine_desc: "Utilice únicamente las pastillas proporcionadas por nosotros para evitar averías.",
         
         item_trinkwasser_title: "Agua Potable Gratuita",
-        item_trinkwasser_desc: "Ofrecemos dispensadores de agua potable purificada en ambas plantas. Escríbanos por WhatsApp cuando necesite recambio.",
+        item_trinkwasser_desc: "Ofrecemos dispensadores de agua potable purificada en ambas plantas. Avísenos cuando necesite recambio.",
         
         item_wasser_title: "Agua del Grifo y Hielo",
         item_wasser_desc: "El agua del grifo proviene de un pozo profundo. Es perfecta para ducharse pero NO debe beberse. El hielo comercial de 7-Eleven o restaurantes es 100% seguro.",
         
         item_waesche_title: "Lavadoras y Lavandería",
-        item_waesche_desc: "Hay lavadoras en ambas plantas y tendederos. Si prefiere servicio de lavandería externo, con gusto le recomendamos las mejores opciones por WhatsApp.",
+        item_waesche_desc: "Hay lavadoras en ambas plantas y tendederos. También hay servicios profesionales de lavandería en la isla.",
         
+        // Emergency Card
         emergency_title: "Contactos de Emergencia en Koh Lanta",
         emergency_doc: "Clínica Dr. Pad: +66 95 515 9555",
         emergency_hospital: "Hospital Koh Lanta: 075 697 017",
         emergency_police: "Policía Turística: 1155 (En inglés)",
-        emergency_whatsapp: "Villa Carma Anfitrión: WhatsApp Directo",
+        emergency_ambulance: "Emergencias Médicas (Ambulancia): 1669",
         
         footer_back_top: "Volver arriba",
         footer_home_link: "Página Principal villacarma.com",
