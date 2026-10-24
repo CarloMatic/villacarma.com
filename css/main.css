@@ -1607,3 +1607,530 @@ main {
     display: block;
     margin-bottom: 0.2rem;
 }
+
+/* ==========================================================================
+   FAQ & GUEST GUIDE PAGE STYLES
+   ========================================================================== */
+
+.faq-hero {
+    position: relative;
+    padding: 7rem 0 3.5rem;
+    background: linear-gradient(135deg, rgba(23, 23, 23, 0.96) 0%, rgba(35, 35, 35, 0.94) 100%),
+                url('../images/hero.webp') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.faq-hero-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.faq-hero .hero-badge {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    background: rgba(203, 170, 92, 0.2);
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.faq-hero h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.faq-hero-lead {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+.faq-hero-notice {
+    font-size: 0.95rem;
+    color: var(--color-accent-hover);
+    margin-bottom: 2rem;
+}
+
+/* Quick Action / Emergency Bar */
+.faq-quick-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.quick-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.quick-btn.whatsapp {
+    background: #25D366;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.quick-btn.whatsapp:hover {
+    background: #20bd5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.quick-btn.doctor {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    backdrop-filter: blur(8px);
+}
+
+.quick-btn.doctor:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Search Bar */
+.faq-search-box {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.faq-search-icon {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #888888;
+    pointer-events: none;
+}
+
+.faq-search-input {
+    width: 100%;
+    padding: 1.1rem 3rem 1.1rem 3.2rem;
+    font-size: 1rem;
+    font-family: var(--font-body);
+    background: #ffffff;
+    color: var(--color-primary);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease;
+}
+
+.faq-search-input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 10px 35px rgba(203, 170, 92, 0.35);
+}
+
+.faq-search-clear {
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e0e0e0;
+    border: none;
+    color: #444;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    transition: background 0.2s;
+}
+
+.faq-search-clear:hover {
+    background: #ccc;
+}
+
+/* Category Filter Pills */
+.faq-filter-bar {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 1rem 0;
+    position: sticky;
+    top: 70px;
+    z-index: 95;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.filter-pills-wrapper {
+    display: flex;
+    gap: 0.6rem;
+    overflow-x: auto;
+    padding: 0.25rem 1rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: flex-start;
+}
+
+.filter-pills-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .filter-pills-wrapper {
+        justify-content: center;
+    }
+}
+
+.filter-pill {
+    white-space: nowrap;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.88rem;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #f8f8f8;
+    color: #333333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.filter-pill:hover {
+    border-color: var(--color-accent);
+    color: var(--color-primary);
+    background: #ffffff;
+}
+
+.filter-pill.active {
+    background: var(--color-primary);
+    color: #ffffff;
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Common */
+.faq-section {
+    padding: 4rem 0;
+}
+
+.faq-section.bg-light {
+    background-color: var(--color-bg-alt);
+}
+
+.faq-section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+}
+
+.faq-badge-sm {
+    display: inline-block;
+    padding: 0.25rem 0.85rem;
+    background: rgba(203, 170, 92, 0.15);
+    border: 1px solid var(--color-accent);
+    color: #937328;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.faq-section-header h2 {
+    font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+}
+
+.faq-section-header p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+}
+
+/* Critical Rules Cards */
+.critical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.critical-card {
+    background: #ffffff;
+    border: 1px solid rgba(203, 170, 92, 0.35);
+    border-top: 4px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    padding: 1.6rem;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.critical-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+}
+
+.critical-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.critical-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.critical-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.65rem;
+    border-radius: 50px;
+    background: rgba(203, 170, 92, 0.15);
+    color: #9a7620;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.critical-card h3 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+}
+
+.critical-card p {
+    font-size: 0.94rem;
+    color: #4a4a4a;
+    line-height: 1.65;
+    margin-bottom: 0.75rem;
+}
+
+.critical-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Controls Bar (Expand / Collapse) */
+.faq-controls-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 850px;
+    margin: 0 auto 1.5rem;
+    padding: 0 0.5rem;
+}
+
+.faq-controls-left {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+.faq-controls-right {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.faq-control-btn {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 0.35rem 0.8rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.faq-control-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background: #fdfdfd;
+}
+
+/* A-Z Letter Group */
+.az-letter-group {
+    max-width: 850px;
+    margin: 0 auto 2.5rem;
+}
+
+.az-letter-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.az-letter-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.25rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.az-letter-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+/* Accordion Specific Styling */
+.az-letter-group .faq-list {
+    margin-top: 0;
+    max-width: 100%;
+}
+
+.faq-item {
+    background: #ffffff;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.faq-item:hover {
+    border-color: rgba(203, 170, 92, 0.5);
+}
+
+.faq-item[open] {
+    border-color: var(--color-accent);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 1.4rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--color-primary);
+}
+
+.faq-item[open] .faq-question {
+    color: #9a7620;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.faq-answer {
+    padding: 1.2rem 1.4rem;
+    color: #4a4a4a;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.faq-answer p {
+    margin-bottom: 0.8rem;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+/* No Results Notification */
+.faq-no-results {
+    display: none;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #ffffff;
+    border-radius: var(--radius-md);
+    border: 1px dashed rgba(203, 170, 92, 0.6);
+}
+
+.faq-no-results span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Emergency Contact Card at bottom */
+.faq-emergency-card {
+    max-width: 850px;
+    margin: 3.5rem auto 0;
+    background: linear-gradient(135deg, #171717 0%, #222222 100%);
+    color: #ffffff;
+    border-radius: var(--radius-md);
+    padding: 2.2rem;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.faq-emergency-card h3 {
+    color: var(--color-accent);
+    font-size: 1.35rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.emergency-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    list-style: none;
+}
+
+.emergency-list li {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.85rem 1.1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.92rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.emergency-list li a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .faq-hero {
+        padding: 5.5rem 0 2.5rem;
+    }
+    .faq-search-input {
+        font-size: 0.92rem;
+        padding: 0.9rem 2.8rem 0.9rem 2.8rem;
+    }
+    .faq-section {
+        padding: 2.5rem 0;
+    }
+    .critical-grid {
+        grid-template-columns: 1fr;
+    }
+}
