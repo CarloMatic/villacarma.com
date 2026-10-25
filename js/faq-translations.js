@@ -41,7 +41,7 @@ const faqTranslations = {
         
         rule_power_title: "Stromkosten & Zählerablesung",
         rule_power_badge: "Kostenpflichtig",
-        rule_power_content: "Der Mietpreis beinhaltet NICHT den Stromverbrauch. Der Zähler wird beim Ein- und Auschecken gemeinsam abgelesen und mit 10 Baht pro Einheit (kWh) berechnet. Um Verbrauch und Kosten zu minimieren, schalten Sie bitte alle elektrischen Geräte aus, wenn Sie das Haus verlassen, und schränken Sie die Nutzung der Klimaanlagen auf ein Minimum ein (Empfehlung: ab 22°C).\n\nZur Kontrolle Ihres Verbrauchs befindet sich je ein Stromzähler im oberen Schrank zwischen Küche und hinterem Schlafzimmer (ein Zähler für oben, einer für unten). Die Stromkosten werden beim Check-Out mit der Kaution verrechnet.",
+        rule_power_content: "Der Mietpreis beinhaltet NICHT den Stromverbrauch. Der Zähler wird beim Ein- und Auschecken gemeinsam abgelesen und mit 10 Baht pro Einheit (kWh) berechnet. Um Verbrauch und Kosten zu minimieren, schalten Sie bitte alle elektrischen Geräte aus, wenn Sie das Haus verlassen, und schränken Sie die Nutzung der Klimaanlagen auf ein Minimum ein (Empfehlung: nicht unter 22°C - Temperaturen darunter können Krankheit und Schäden am Haus verursachen).\n\nZur Kontrolle Ihres Verbrauchs befindet sich je ein Stromzähler im Schrank zwischen Küche und hinterem Schlafzimmer (ein Zähler für oben, einer für unten). Die Stromkosten werden beim Check-Out mit der Kaution verrechnet.",
         
         rule_security_title: "Sicherheit & Wertsachen",
         rule_security_badge: "Wichtig",
@@ -68,9 +68,6 @@ const faqTranslations = {
         item_apotheke_title: "Apotheke",
         item_apotheke_desc: "Die nächstgelegene Apotheke befindet sich unten an der Hauptstraße: „Longbeach Pharmacy“ (ca. 5 Minuten Fußweg bzw. 1 Minute mit dem Roller). Dort finden Sie gängige Medikamente, Verbandszeug und Mückenschutz.",
         
-        item_ausfluege_title: "Ausflüge & Touren",
-        item_ausfluege_desc: "Wir unterstützen Sie gerne bei der Vermittlung von Ausflügen (z.B. 4-Islands-Tour, Koh Rok, Phi Phi Islands, Mangroven-Kajaktouren oder Tauchausflüge). Sprechen Sie uns einfach an. Selbstverständlich steht es Ihnen frei, andere örtliche Reisebüros zu beauftragen.",
-        
         item_autoverleih_title: "Autoverleih",
         item_autoverleih_desc: "Wenn Sie für Ihren Aufenthalt ein Auto mieten möchten, sprechen Sie uns gerne an. Wir arbeiten mit zuverlässigen lokalen Partnern zusammen und organisieren die Fahrzeugübergabe direkt an die Villa.",
         
@@ -83,7 +80,7 @@ const faqTranslations = {
         
         // E
         item_elektrizitaet_title: "Elektrizität & Inselstromnetz",
-        item_elektrizitaet_desc: "Bitte beachten Sie, dass wir uns auf einer tropischen Insel befinden. Das Stromnetz auf Koh Lanta ist noch im Ausbau und es kann gelegentlich zu kurzen Stromschwankungen oder kurzen Ausfällen kommen. Das ist inselweit normal und dauert meist nur wenige Minuten.\n\nGelegentlich führt die Behörde Wartungsarbeiten durch; in diesem Fall informieren wir Sie vorab so schnell wie möglich.\n\n⚠️ Wichtig für Wasserversorgung: Unser Wassersystem arbeitet mit elektrischen Druckpumpen. Bei Stromausfall fließt vorübergehend kein Wasser. Sollten Sie einen Hahn geöffnet haben und kein Wasser kommen, schließen Sie ihn bitte sofort wieder, damit es später nicht überläuft!\n\nNeustart von Geräten: Falls sich Router, Wasserpumpe oder Warmwasser nach einem Ausfall nicht selbst starten, ziehen Sie den Stecker für ca. 5 Minuten und stecken ihn wieder ein. Sollte es weiterhin klemmen, wenden Sie sich bitte an uns.",
+        item_elektrizitaet_desc: "Bitte beachten Sie, dass wir uns auf einer tropischen Insel befinden. Das Stromnetz auf Koh Lanta ist noch im Ausbau und es kann gelegentlich zu kurzen Stromschwankungen oder kurzen Ausfällen kommen. Das ist inselweit normal und dauert meist nur wenige Minuten.\n\nGelegentlich führt die Behörde Wartungsarbeiten durch; in diesem Fall informieren wir Sie vorab so schnell wie möglich.\n\n⚠️ Wichtig für Wasserversorgung: Unser Wassersystem arbeitet mit elektrischen Druckpumpen. Bei Stromausfall fließt vorübergehend kein Wasser. Sollten Sie einen Hahn geöffnet haben und kein Wasser kommen, schließen Sie ihn bitte sofort wieder, damit es später nicht überläuft!",
         
         // G
         item_garten_title: "Gartenarbeiten",
@@ -97,7 +94,7 @@ const faqTranslations = {
         item_haartrockner_desc: "Auf beiden Etagen steht Ihnen je ein Haartrockner in den Badezimmern zur Verfügung.",
         
         item_handtuecher_title: "Handtücher",
-        item_handtuecher_desc: "Die in der Villa bereitgestellten Handtücher sind ausschließlich für die Nutzung im Haus und am privaten Pool bestimmt. Bitte nehmen Sie diese Handtücher NICHT mit an den öffentlichen Strand (bringen Sie bitte eigene Strandtücher mit oder erwerben Sie Sarongs an den Strandshops).",
+        item_handtuecher_desc: "Die in der Villa bereitgestellten Handtücher sind ausschließlich für die Nutzung im Haus und am privaten Pool bestimmt. Die grauen Handtücher sind für den täglichen Gebrauch, die Schwarz/Weiß gestreiften sind für den Poolbereich. Bitte nehmen Sie diese Handtücher NICHT mit an den öffentlichen Strand (bringen Sie bitte eigene Strandtücher mit oder erwerben Sie Sarongs an den Strandshops).",
         
         // K
         item_kaffee_title: "Kaffeemaschinen (Siebträger & Vollautomat)",
@@ -110,18 +107,18 @@ const faqTranslations = {
         item_kaution_desc: "Beim Check-In hinterlegen Sie bitte eine Kaution in Höhe von 10.000 Baht in bar. Diese dient zur Verrechnung des Stromverbrauchs (10 THB/Einheit), der Endreinigung sowie zur Deckung allfälliger Schäden. Der Restsaldo wird beim Check-Out sofort bar erstattet.",
         
         item_klima_title: "Klimaanlagen & Wohlfühltemperatur",
-        item_klima_desc: "Um Ihren Kreislauf zu schonen und Erkältungen vorzubeugen, empfehlen wir, die Klimaanlage nicht unter 22°C einzustellen. Da die Klimaanlagen die größten Stromverbraucher sind, empfiehlt sich die Nutzung primär nachts. Bitte schalten Sie die Klimaanlagen beim Verlassen der Räume stets aus.",
+        item_klima_desc: "Um Ihren Kreislauf zu schonen und Erkältungen vorzubeugen, empfehlen wir, die Klimaanlage nicht unter 22°C einzustellen, sonst können auch Schäden am Haus entstehen. Da die Klimaanlagen die größten Stromverbraucher sind, empfiehlt sich die Nutzung primär nachts. Bitte schalten Sie die Klimaanlagen beim Verlassen der Räume stets aus.",
         
         // M
         item_moskitos_title: "Mückenschutz & Moskitos",
-        item_moskitos_desc: "In den Tropen sind Mücken besonders in der Dämmerungszeit (später Nachmittag und Sonnenuntergang) aktiv. Schützen Sie sich durch Mückenspray. Sehr bewährt hat sich das Repellent „OFF“ (orangefarbene Sprühdose), das Sie in fast jeder Apotheke, bei 7-Eleven und Minimärkten auf Koh Lanta erhalten.",
+        item_moskitos_desc: "In den Tropen sind Mücken besonders in der Dämmerungszeit (später Nachmittag und Sonnenuntergang) aktiv. Schützen Sie sich durch Mückenspray. Sehr bewährt hat sich das Repellent „OFF“ (orangefarbene Sprühdose), das Sie in fast jeder Apotheke oder im Lanta Markt in Saladan erhalten.",
         
         item_muell_title: "Müll & Mülltrennung",
-        item_muell_desc: "An der Villa gibt es keine tägliche Haustür-Müllabfuhr. Bitte bringen Sie Ihren verpackten Müll regelmäßig zur großen Beton-Müllbox an der Zufahrtsstraße Richtung Hauptstraße. In der Villa stehen Ihnen 3 Mülleimer zur Trennung zur Verfügung:\n\n1. Glas separat\n2. Papier und Plastik separat\n3. Küchenabfälle & Restmüll separat (unter der Spüle).",
+        item_muell_desc: "An der Villa gibt es keine tägliche Haustür-Müllabfuhr. Bitte bringen Sie Ihren verpackten Müll regelmäßig zur großen Beton-Müllbox an der Zufahrtsstraße Richtung Hauptstraße unterhalb der Villa an den Briefkästen. Dort ist die rechte Box für Restmüll und die linke für Glas und Plastik. Stellen Sie keinen Müll daneben, da die Affen sonst angelockt werden. In der Villa stehen Ihnen 3 Mülleimer zur Trennung zur Verfügung:\n\n1. Glas separat\n2. Papier und Plastik separat\n3. Küchenabfälle & Restmüll separat (unter der Spüle).",
         
         // P
         item_pool_title: "Infinity-Salzwasserpool",
-        item_pool_desc: "Unser privater Salzwasserpool wird alle 2 bis 3 Tage professionell gepflegt. Die Reinigung dauert ca. 10–15 Minuten; das Serviceteam betritt den Poolbereich diskret über den seitlichen Zugang.\n\nIn der Tropenhitze verdunstet Wasser rasch; von Zeit zu Zeit wird frisches Wasser nachgefüllt. Bitte duschen Sie vor dem Baden, um Sonnencreme und Sand vom Pool fernzuhalten. Aus Sicherheitsgründen ist das Hineinspringen und Kopfsprung-Tauchen strengstens verboten.",
+        item_pool_desc: "Unser privater Salzwasserpool wird alle 2 bis 3 Tage professionell gepflegt. Die Reinigung dauert ca. 10–15 Minuten; das Serviceteam betritt den Poolbereich diskret über den hinteren seitlichen Zugang am Pool. Bitte duschen Sie vor dem Baden, um Sonnencreme und Sand vom Pool fernzuhalten. Aus Sicherheitsgründen ist das Hineinspringen und Kopfsprung-Tauchen strengstens verboten.",
         
         // R
         item_roller_title: "Rollerverleih (Scooter)",
@@ -131,14 +128,14 @@ const faqTranslations = {
         item_rauchen_desc: "Das Rauchen im gesamten Innenbereich der Villa ist strengstens untersagt. Auf den Terrassen, Balkonen und in der Sala im Freien ist das Rauchen gestattet. Bitte nutzen Sie die bereitstehenden Aschenbecher und achten Sie auf Funkenflug.",
         
         item_reinigung_title: "Reinigung & Wäschewechsel",
-        item_reinigung_desc: "Bei Aufenthalten ab 14 Tagen ist eine wöchentliche Zwischenreinigung inklusive vollständigem Wechsel von Bettwäsche und Handtüchern im Mietpreis inbegriffen. Auf Wunsch können zusätzliche Reinigungen gegen Aufpreis gebucht werden.\n\nDie Reinigung erfolgt zwischen 10:00 und 16:00 Uhr (Dauer ca. 3 Stunden pro Etage). Wir stimmen den genauen Termin vorher mit Ihnen ab. Bitte räumen Sie persönliche Gegenstände zur Seite und verschließen Sie Wertsachen im Safe.",
+        item_reinigung_desc: "Wenn Sie eine Zwischenreinigung wünschen, sprechen Sie den Manager gerne jederzeit an. Zwischenreinigungen können zu günstigen Preisen jederzeit mit einem Vorlauf von 3 Werktagen gebucht werden.\n\nDie Reinigung erfolgt zwischen 10:00 und 16:00 Uhr (Dauer ca. 3 Stunden pro Etage). Wir stimmen den genauen Termin vorher mit Ihnen ab. Bitte räumen Sie persönliche Gegenstände zur Seite und verschließen Sie Wertsachen im Safe.",
         
         item_ruhe_title: "Ruhezeiten & Nachbarschaft",
         item_ruhe_desc: "Franks Hill ist eine friedliche Wohngegend mit Nachbarn und Residenten. Bitte halten Sie Lärm, Musik und Fernseher auf moderater Lautstärke. Ab 22:00 Uhr gilt aus Rücksicht auf die Nachbarschaft absolute Nachtruhe im Außenbereich.",
         
         // S
         item_sonnenschirme_title: "Sonnenschirme",
-        item_sonnenschirme_desc: "Aufgrund plötzlicher tropischer Windböen bitten wir Sie, alle Sonnenschirme stets zu schließen, wenn Sie das Haus verlassen oder wenn Wind aufkommt.",
+        item_sonnenschirme_desc: "Aufgrund plötzlicher tropischer Windböen bitten wir Sie, alle Sonnenschirme stets zu schließen und zu verschnüren, wenn Sie das Haus verlassen oder wenn Wind aufkommt.",
         
         item_sauberkeit_title: "Sauberkeit & Sorgfaltspflicht",
         item_sauberkeit_desc: "The Carma ist ein privates Luxusanwesen. Bitte behandeln Sie das Haus und das Mobiliar pfleglich und hinterlassen Sie es ordentlich. Schäden bitten wir unverzüglich zu melden.",
@@ -210,7 +207,7 @@ const faqTranslations = {
         
         rule_power_title: "Electricity Costs & Meter Reading",
         rule_power_badge: "Billed per usage",
-        rule_power_content: "The rental rate does NOT include electricity consumption. Meters are read together with you at check-in and check-out and billed at 10 Baht per unit (kWh). To minimize power consumption and costs, please switch off electrical appliances when leaving the villa and keep air conditioning usage to an efficient minimum (recommended: 22°C or above).\n\nTo check your consumption, an electricity meter is located in the upper cupboard between the kitchen and the rear bedroom (one meter upstairs, one downstairs). Electricity costs will be settled against your deposit at check-out.",
+        rule_power_content: "The rental rate does NOT include electricity consumption. Meters are read together with you at check-in and check-out and billed at 10 Baht per unit (kWh). To minimize power consumption and costs, please switch off electrical appliances when leaving the villa and keep air conditioning usage to an efficient minimum (recommended: not below 22°C - lower temperatures can cause illness and structural damage to the house).\n\nTo check your consumption, an electricity meter is located in the cupboard between the kitchen and the rear bedroom (one meter upstairs, one downstairs). Electricity costs will be settled against your deposit at check-out.",
         
         rule_security_title: "Security & Valuables",
         rule_security_badge: "Safety",
@@ -237,9 +234,6 @@ const faqTranslations = {
         item_apotheke_title: "Pharmacy",
         item_apotheke_desc: "The nearest pharmacy is located on the main road: 'Longbeach Pharmacy' (approx. 5 minutes walk or 1 minute by scooter). They stock common travel medicine, first-aid supplies, and mosquito repellents.",
         
-        item_ausfluege_title: "Tours & Excursions",
-        item_ausfluege_desc: "We are happy to assist with information regarding island excursions (e.g. 4-Islands speedboat tour, Koh Rok snorkeling, Phi Phi Islands, mangrove kayaking, or scuba diving). Feel free to ask us anytime. You are of course free to book with external agencies as well.",
-        
         item_autoverleih_title: "Car Rental",
         item_autoverleih_desc: "If you require a rental car during your stay, feel free to contact us. We can connect you with reliable local car rental providers.",
         
@@ -252,7 +246,7 @@ const faqTranslations = {
         
         // E
         item_elektrizitaet_title: "Electricity & Island Grid Quirks",
-        item_elektrizitaet_desc: "Please remember that Koh Lanta is a tropical island with evolving power infrastructure. Intermittent power fluctuations or short blackouts can occur. These are normal island occurrences and typically last only a few minutes.\n\nOccasionally, the local electrical authority carries out scheduled maintenance; we will notify you immediately in such cases.\n\n⚠️ Crucial for water supply: Our fresh water system relies on electric pressure pumps. During a power outage, water will temporarily stop flowing. If you turned on a tap while the power was out, remember to close it immediately so it doesn't overflow when power resumes!\n\nRebooting appliances: If the WiFi router, water pump, or hot water heater do not restart automatically after an outage, unplug the device for 5 minutes and plug it back in. If issues persist, please let us know.",
+        item_elektrizitaet_desc: "Please remember that Koh Lanta is a tropical island with evolving power infrastructure. Intermittent power fluctuations or short blackouts can occur. These are normal island occurrences and typically last only a few minutes.\n\nOccasionally, the local electrical authority carries out scheduled maintenance; we will notify you immediately in such cases.\n\n⚠️ Crucial for water supply: Our fresh water system relies on electric pressure pumps. During a power outage, water will temporarily stop flowing. If you turned on a tap while the power was out, remember to close it immediately so it doesn't overflow when power resumes!",
         
         // G
         item_garten_title: "Garden & Grounds Care",
@@ -266,7 +260,7 @@ const faqTranslations = {
         item_haartrockner_desc: "Hairdryers are provided in the bathrooms on both the upper and lower floors.",
         
         item_handtuecher_title: "Towels",
-        item_handtuecher_desc: "All villa bath and pool towels are exclusively intended for use within the property and at our private pool. Please do NOT take villa towels to the beach (feel free to bring your own beach towels or purchase local sarongs).",
+        item_handtuecher_desc: "All towels provided at the villa are exclusively intended for use in the house and at the private pool. The grey towels are for daily bathroom use, and the black-and-white striped towels are for the pool area. Please do NOT take villa towels to the beach!\n\nFor beach days, feel free to bring your own beach towels or purchase affordable sarongs at local island boutiques.",
         
         // K
         item_kaffee_title: "Coffee Machines (Portafilter & Fully Automatic)",
@@ -279,18 +273,18 @@ const faqTranslations = {
         item_kaution_desc: "A refundable security deposit of 10,000 Baht in cash is requested at check-in. This covers metered electricity (10 THB/unit), final cleaning, and any accidental damages. The remaining balance is returned to you in cash upon departure.",
         
         item_klima_title: "Air Conditioning Guidelines",
-        item_klima_desc: "To prevent sudden thermal shock and colds, we recommend setting air conditioners to 22°C or warmer. Air conditioning represents the primary electricity cost; turning units off when leaving rooms significantly reduces your check-out electricity bill.",
+        item_klima_desc: "To prevent sudden thermal shock and colds, we recommend setting air conditioners not below 22°C, otherwise damage to the house can also occur. Air conditioning represents the primary electricity cost; turning units off when leaving rooms significantly reduces your check-out electricity bill.",
         
         // M
         item_moskitos_title: "Mosquito Protection",
-        item_moskitos_desc: "Mosquitoes in Southeast Asia are most active around sunset and late afternoon. Protect yourself with insect repellent. The orange spray can brand 'OFF' is highly effective and widely sold in local pharmacies and 7-Eleven stores across the island.",
+        item_moskitos_desc: "Mosquitoes in Southeast Asia are most active around sunset and late afternoon. Keep windows and sliding doors closed before dusk and use mosquito screens.\n\nThe orange spray can repellent 'OFF' is highly effective and widely available at almost any pharmacy or at Lanta Mart in Saladan. We recommend spraying before dining outdoors.",
         
         item_muell_title: "Waste Disposal & Recycling",
-        item_muell_desc: "There is no municipal doorstep garbage collection at the villa. Please place tied trash bags in the concrete waste bin located down the private hill road towards the main road. 3 separate bins are available on each floor:\n\n1. Glass bottles\n2. Paper & plastic recycling\n3. Organic & general household waste (under the kitchen sink).",
+        item_muell_desc: "There is no municipal doorstep garbage collection at the villa. Please place your tied trash bags regularly in the large concrete waste boxes down the private access road towards the main road, situated below the villa near the mailboxes. The right box is for general/residual waste, and the left box is for glass and plastic. Please do not leave trash next to the boxes, as it attracts wild monkeys!\n\nSeparate bins are available inside the villa:\n• Glass bottles\n• Paper & plastic\n• General & organic kitchen waste (under the sink)\n\nPlease dispose of food scraps promptly to avoid attracting ants and insects.",
         
         // P
         item_pool_title: "Private Saltwater Pool",
-        item_pool_desc: "Our private infinity saltwater pool is professionally serviced every 2 to 3 days (takes about 10–15 minutes; maintenance arrives via the side pathway). Water is topped up periodically.\n\nPlease rinse off under the outdoor shower before swimming to remove sunscreen and sand. Diving and head-first jumping into the pool are strictly prohibited for your safety.",
+        item_pool_desc: "Our private infinity saltwater pool is professionally serviced every 2 to 3 days; the service team enters the pool area discreetly via the rear side pathway by the pool. Please rinse off under the outdoor shower before swimming to remove sunscreen, sand, and sweat – keeping the water crystal clear.\n\n⚠️ Safety: Diving and head-first jumping into the pool are strictly prohibited.",
         
         // R
         item_roller_title: "Scooter Rental",
@@ -300,14 +294,14 @@ const faqTranslations = {
         item_rauchen_desc: "Smoking inside any part of the villa is strictly forbidden. Smoking is allowed in open-air outdoor areas (terraces, balconies, and the sala). Please always use the provided ashtrays and ensure butts are safely extinguished.",
         
         item_reinigung_title: "Housekeeping & Linen Service",
-        item_reinigung_desc: "For stays of 14 days or longer, one weekly cleaning service including full bed linen and towel changes is included. Additional housekeeping sessions can be arranged upon request for an extra fee.\n\nHousekeeping hours are between 10:00 AM and 4:00 PM (approx. 3 hours per floor). We coordinate dates with you in advance. Please put away personal belongings and lock valuables in the safe.",
+        item_reinigung_desc: "If you wish to have an interim cleaning, feel free to speak to our manager anytime. Interim cleanings can be booked at fair rates with 3 business days advance notice.\n\nHousekeeping hours are between 10:00 AM and 4:00 PM (approx. 3 hours per floor). We coordinate the exact date with you in advance. Please put away personal items and lock valuables in the safe.",
         
         item_ruhe_title: "Quiet Hours & Neighborhood",
         item_ruhe_desc: "Franks Hill is a tranquil residential community with permanent residents and peaceful neighbors. Please keep sound, TV, and music to a respectful level. Strict outdoor quiet hours commence at 10:00 PM (22:00).",
         
         // S
         item_sonnenschirme_title: "Sun Umbrellas (Parasols)",
-        item_sonnenschirme_desc: "Tropical wind gusts can arise quickly. Please always close all sun umbrellas when you leave the villa or during windy weather.",
+        item_sonnenschirme_desc: "Due to sudden tropical wind gusts, please always close and tie down all sun umbrellas when leaving the villa or during windy weather.",
         
         item_sauberkeit_title: "Care & Cleanliness",
         item_sauberkeit_desc: "The Carma is a private luxury home. Please treat the premises with care, keep it tidy, and notify us of any damages promptly.",
@@ -379,7 +373,7 @@ const faqTranslations = {
         
         rule_power_title: "Consommation Électrique & Relevé de Compteur",
         rule_power_badge: "Facturé selon consommation",
-        rule_power_content: "Le tarif de location n'inclut PAS la consommation d'électricité. Les compteurs sont relevés ensemble à l'arrivée et au départ, et facturés 10 Bahts par unité (kWh). Pour limiter les coûts, veillez à éteindre les appareils en sortant et réglez la climatisation avec modération (22°C recommandé).\n\nLes compteurs sont situés dans le placard haut entre la cuisine et la chambre arrière (un pour chaque étage). Le montant sera déduit de la caution au départ.",
+        rule_power_content: "Le tarif de location n'inclut PAS la consommation d'électricité. Les compteurs sont relevés ensemble à l'arrivée et au départ, et facturés 10 Bahts par unité (kWh). Pour limiter les coûts, veillez à éteindre les appareils en sortant et réglez la climatisation avec modération (recommandation : pas en dessous de 22°C - des températures inférieures peuvent causer des maladies et des dommages à la maison).\n\nLes compteurs sont situés dans le placard entre la cuisine et la chambre arrière (un pour chaque étage). Le montant sera déduit de la caution au départ.",
         
         rule_security_title: "Sécurité & Objets de Valeur",
         rule_security_badge: "Important",
@@ -405,9 +399,6 @@ const faqTranslations = {
         item_apotheke_title: "Pharmacie",
         item_apotheke_desc: "La pharmacie la plus proche se trouve sur la route principale : « Longbeach Pharmacy » (environ 5 min à pied ou 1 min en scooter).",
         
-        item_ausfluege_title: "Excursions & Activités",
-        item_ausfluege_desc: "Nous vous renseignons volontiers sur les sorties en bateau (4 Îles, Koh Rok, îles Phi Phi, kayak dans les mangroves). N'hésitez pas à nous demander.",
-        
         item_autoverleih_title: "Location de Voiture",
         item_autoverleih_desc: "Si vous souhaitez louer une voiture, nous pouvons vous recommander des agences de location locales fiables.",
         
@@ -431,7 +422,7 @@ const faqTranslations = {
         item_haartrockner_desc: "Un sèche-cheveux est disponible dans les salles de bains à chaque étage.",
         
         item_handtuecher_title: "Serviettes",
-        item_handtuecher_desc: "Les serviettes de la villa sont strictement réservées à un usage intérieur et au bord de la piscine. Ne les emportez pas à la plage.",
+        item_handtuecher_desc: "Les serviettes de la villa sont strictement réservées à un usage intérieur et au bord de la piscine privée. Les serviettes grises sont destinées à l'usage quotidien, les serviettes à rayures noir et blanc sont pour l'espace piscine. Ne les emportez jamais à la plage !",
         
         item_kaffee_title: "Machines à Café",
         item_kaffee_desc: "Vous disposez d'une machine expresso manuelle et d'une machine automatique. Des grains de café sont disponibles au Lanta Mart à Saladan. Merci de nettoyer le réservoir à lait après usage.",
@@ -443,16 +434,16 @@ const faqTranslations = {
         item_kaution_desc: "Une caution de 10 000 Bahts en espèces est demandée à l'arrivée pour couvrir l'électricité et les éventuels dommages.",
         
         item_klima_title: "Climatisation",
-        item_klima_desc: "Nous recommandons de régler la climatisation à 22°C minimum et de l'éteindre lorsque vous quittez les pièces.",
+        item_klima_desc: "Pour préserver votre santé et éviter les coups de froid, nous recommandons de ne pas régler la climatisation en dessous de 22°C, sans quoi des dommages au bâtiment peuvent également survenir. Éteignez les climatiseurs lorsque vous quittez les pièces.",
         
         item_moskitos_title: "Moustiques",
-        item_moskitos_desc: "Les moustiques sont actifs au crépuscule. Utilisez le spray répulsif 'OFF' (flacon orange), en vente dans tous les 7-Eleven et pharmacies.",
+        item_moskitos_desc: "Les moustiques sont particulièrement actifs au crépuscule. Utilisez le spray répulsif 'OFF' (flacon orange), en vente dans presque toutes les pharmacies ou au Lanta Mart à Saladan.",
         
         item_muell_title: "Gestion des Déchets",
-        item_muell_desc: "Il n'y a pas de ramassage à domicile. Déposez vos sacs poubelles dans le grand bac en béton sur la route de la colline. Triez verre, plastique/papier et déchets organiques.",
+        item_muell_desc: "Il n'y a pas de ramassage à domicile. Déposez régulièrement vos sacs poubelles fermés dans les grands bacs en béton situés le long de la route d'accès vers la route principale, en contrebas de la villa près des boîtes aux lettres. Le bac de droite est réservé aux déchets résiduels et celui de gauche au verre et plastique. Ne déposez rien à côté pour ne pas attirer les singes ! Triez verre, plastique/papier et déchets organiques.",
         
         item_pool_title: "Piscine Privée au Sel",
-        item_pool_desc: "La piscine est entretenue tous les 2 à 3 jours. Merci de vous doucher avant la baignade. Les plongeons sont strictement interdits.",
+        item_pool_desc: "La piscine est entretenue tous les 2 à 3 jours. L'équipe technique y accède discrètement par l'accès latéral arrière près de la piscine. Merci de vous doucher avant la baignade. Les plongeons sont strictement interdits.",
         
         item_roller_title: "Location de Scooters",
         item_roller_desc: "Si vous souhaitez louer un scooter, nous pouvons vous indiquer des partenaires locaux fiables.",
@@ -461,13 +452,13 @@ const faqTranslations = {
         item_rauchen_desc: "Fumer est formellement interdit à l'intérieur. Vous pouvez fumer sur les terrasses et balcons extérieurs en utilisant les cendriers.",
         
         item_reinigung_title: "Ménage & Draps",
-        item_reinigung_desc: "Pour les séjours de 14 jours ou plus, un ménage hebdomadaire avec changement de draps et serviettes est inclus. Nettoyage supplémentaire possible sur demande.",
+        item_reinigung_desc: "Si vous souhaitez un ménage intermédiaire, n'hésitez pas à en faire la demande auprès du manager. Les ménages intermédiaires peuvent être réservés à tarif avantageux avec un préavis de 3 jours ouvrés.\n\nLe ménage s'effectue entre 10h00 et 16h00 (environ 3 heures par étage). Nous convenons de la date avec vous à l'avance. Veuillez ranger vos affaires personnelles et placer vos objets de valeur au coffre-fort.",
         
         item_ruhe_title: "Tranquillité & Heures Silencieuses",
         item_ruhe_desc: "Merci de respecter le voisinage paisible de Franks Hill. Le calme complet est exigé à partir de 22h00.",
         
         item_sonnenschirme_title: "Parasols",
-        item_sonnenschirme_desc: "Fermez impérativement les parasols en cas de vent et lorsque vous quittez la villa.",
+        item_sonnenschirme_desc: "Fermez et attachez impérativement les parasols en cas de vent et lorsque vous quittez la villa.",
         
         item_sauberkeit_title: "Propreté & Soin",
         item_sauberkeit_desc: "The Carma est une villa de standing. Merci de la traiter avec respect et de signaler toute anomalie.",
@@ -536,7 +527,7 @@ const faqTranslations = {
         
         rule_power_title: "Costes de Electricidad y Lectura de Contadores",
         rule_power_badge: "Facturado según consumo",
-        rule_power_content: "El precio del alquiler NO incluye el consumo eléctrico. Los contadores se leen conjuntamente al check-in y al check-out y se facturan a 10 Bahts por unidad (kWh). Para reducir costes, apague los aparatos al salir y use el aire acondicionado con moderación (recomendado: 22°C o más).\n\nHay un contador en el armario superior entre la cocina y el dormitorio trasero (uno arriba y otro abajo). Se descuenta de la fianza al salir.",
+        rule_power_content: "El precio del alquiler NO incluye el consumo eléctrico. Los contadores se leen conjuntamente al check-in y al check-out y se facturan a 10 Bahts por unidad (kWh). Para reducir costes, apague los aparatos al salir y use el aire acondicionado con moderación (recomendación: no por debajo de 22°C; temperaturas inferiores pueden provocar enfermedades y daños en la vivienda).\n\nHay un contador en el armario entre la cocina y el dormitorio trasero (uno arriba y otro abajo). Se descuenta de la fianza al salir.",
         
         rule_security_title: "Seguridad y Objetos de Valor",
         rule_security_badge: "Seguridad",
@@ -562,9 +553,6 @@ const faqTranslations = {
         item_apotheke_title: "Farmacia",
         item_apotheke_desc: "La farmacia más cercana está en la carretera principal: 'Longbeach Pharmacy' (a unos 5 minutos a pie o 1 minuto en moto).",
         
-        item_ausfluege_title: "Excursiones y Tours",
-        item_ausfluege_desc: "Con gusto le orientamos sobre paseos en barco (Tour de 4 Islas, Koh Rok, Phi Phi, kayak en manglares). Pregúntenos cuando lo desee.",
-        
         item_autoverleih_title: "Alquiler de Coches",
         item_autoverleih_desc: "Si necesita un coche de alquiler, podemos recomendarle agencias locales de confianza.",
         
@@ -588,7 +576,7 @@ const faqTranslations = {
         item_haartrockner_desc: "Hay un secador de pelo disponible en los baños de cada planta.",
         
         item_handtuecher_title: "Toallas",
-        item_handtuecher_desc: "Las toallas de la villa son exclusivamente para uso en la casa y en la piscina privada. No las lleve a la playa pública.",
+        item_handtuecher_desc: "Las toallas de la villa son exclusivamente para uso en la casa y en la piscina privada. Las toallas grises son para el uso diario en el baño, y las toallas de rayas blancas y negras son para la piscina. ¡Por favor, no las lleve a la playa pública!",
         
         item_kaffee_title: "Cafeteras",
         item_kaffee_desc: "Dispone de una cafetera exprés manual y de una cafetera automática. El café en grano se puede comprar en Lanta Mart en Saladan. Por favor, limpie el accesorio de leche tras su uso.",
@@ -600,16 +588,16 @@ const faqTranslations = {
         item_kaution_desc: "Se solicita una fianza de 10.000 Bahts en efectivo al check-in para cubrir la electricidad y eventuales desperfectos. Se devuelve en efectivo al check-out.",
         
         item_klima_title: "Aire Acondicionado",
-        item_klima_desc: "Recomendamos ajustar la temperatura a 22°C o más. Apague el aire acondicionado al salir de las habitaciones para ahorrar energía.",
+        item_klima_desc: "Para cuidar su salud y evitar resfriados, recomendamos no ajustar el aire acondicionado por debajo de 22°C, ya que de lo contrario también pueden producirse daños en la vivienda. Apague los aparatos al salir de las habitaciones para reducir el consumo.",
         
         item_moskitos_title: "Mosquitos",
-        item_moskitos_desc: "Los mosquitos están activos al atardecer. Recomendamos el repelente en spray 'OFF' (bote naranja), disponible en farmacias y tiendas 7-Eleven.",
+        item_moskitos_desc: "Los mosquitos están especialmente activos al atardecer. Recomendamos el repelente en spray 'OFF' (bote naranja), disponible en casi cualquier farmacia o en Lanta Mart en Saladan.",
         
         item_muell_title: "Basura y Reciclaje",
-        item_muell_desc: "No hay recogida puerta a puerta. Deposite las bolsas cerradas en el contenedor de hormigón en el camino hacia la carretera principal. Separe vidrio, papel/plástico y orgánicos.",
+        item_muell_desc: "No hay recogida de basura puerta a puerta. Por favor, lleve periódicamente sus bolsas cerradas a los grandes contenedores de hormigón situados en la carretera de acceso hacia la carretera principal, debajo de la villa junto a los buzones. El contenedor derecho es para residuos orgánicos/resto y el izquierdo para vidrio y plástico. ¡No deje basura fuera de los contenedores para evitar atraer a los monos! Separe vidrio, papel/plástico y orgánicos.",
         
         item_pool_title: "Piscina Privada de Agua Salada",
-        item_pool_desc: "Se realiza mantenimiento cada 2-3 días. Dúchese antes de bañarse para mantener el agua limpia. Está estrictamente prohibido tirarse de cabeza por seguridad.",
+        item_pool_desc: "Nuestra piscina privada de agua salada recibe mantenimiento cada 2-3 días; el equipo accede discretamente por la entrada lateral trasera junto a la piscina. Dúchese antes de bañarse para mantener el agua limpia. Está estrictamente prohibido tirarse de cabeza por seguridad.",
         
         item_roller_title: "Alquiler de Scooters / Motos",
         item_roller_desc: "Es la forma más fácil de moverse por la isla. Le orientamos sobre las mejores opciones de alquiler local con entrega en la villa.",
@@ -618,13 +606,13 @@ const faqTranslations = {
         item_rauchen_desc: "Está totalmente prohibido fumar en el interior. Se permite fumar en terrazas y balcones utilizando los ceniceros.",
         
         item_reinigung_title: "Limpieza y Cambio de Ropa",
-        item_reinigung_desc: "Para estancias de 14 días o más, se incluye una limpieza semanal con cambio de sábanas y toallas. Limpiezas adicionales disponibles bajo petición.",
+        item_reinigung_desc: "Si desea un servicio de limpieza intermedia, no dude en consultarlo con el gerente en cualquier momento. Las limpiezas intermedias se pueden contratar a precios económicos con una antelación de 3 días laborables.\n\nEl servicio se realiza entre las 10:00 y las 16:00 (aprox. 3 horas por planta). Coordinamos la fecha exacta con antelación. Por favor, retire sus pertenencias personales y guarde los objetos de valor en la caja fuerte.",
         
         item_ruhe_title: "Tranquilidad y Horas de Silencio",
         item_ruhe_desc: "Franks Hill es una tranquila zona residencial. A partir de las 22:00 horas rige el silencio estricto en exteriores.",
         
         item_sonnenschirme_title: "Sombrillas",
-        item_sonnenschirme_desc: "Cierre las sombrillas cuando no las use o cuando sople viento fuerte.",
+        item_sonnenschirme_desc: "Debido a ráfagas repentinas de viento tropical, por favor cierre y ate siempre todas las sombrillas al salir de la villa o cuando sople viento fuerte.",
         
         item_sauberkeit_title: "Cuidado y Limpieza",
         item_sauberkeit_desc: "The Carma es una villa de alta categoría. Trátela con cariño y avísenos de cualquier inconveniente.",
