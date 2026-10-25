@@ -143,8 +143,8 @@ const faqTranslations = {
         item_sauberkeit_title: "Sauberkeit & Sorgfaltspflicht",
         item_sauberkeit_desc: "The Carma ist ein privates Luxusanwesen. Bitte behandeln Sie das Haus und das Mobiliar pfleglich und hinterlassen Sie es ordentlich. Schäden bitten wir unverzüglich zu melden.",
         
-        item_schaeden_title: "Schadensmeldung",
-        item_schaeden_desc: "Ein Missgeschick kann jedem passieren. Melden Sie uns Schäden bitte unverzüglich oder spätestens beim Check-Out. Kleinere Schäden werden unkompliziert mit der Kaution verrechnet; größere Schäden wickeln wir über die Versicherung der Buchungsportale ab.",
+        item_schaeden_title: "Schäden & Schadensmeldung",
+        item_schaeden_desc: "Ein Missgeschick kann jedem einmal passieren – das ist kein Problem, solange wir Bescheid wissen. Bitte melden Sie uns jeden Schaden unverzüglich oder spätestens bei der gemeinsamen Übergabe der Villa beim Check-Out.\n\n• Kleinere Schäden verrechnen wir unkompliziert und transparent direkt mit der Kaution.\n• Größere Schäden werden über die Schutzprogramme der Buchungsportale (z. B. Airbnb AirCover) gemeldet. Wichtig zu wissen: Die Buchungsportale übernehmen zwar die Erstabwicklung, fordern den finanziellen Schaden im Nachgang jedoch in der Regel vom Gast bzw. dessen Haftpflichtversicherung zurück.\n\nEine offene und rechtzeitige Meldung vor Ort ist daher für alle Beteiligten der fairste und stressfreiste Weg.",
         
         item_spuelmaschine_title: "Spülmaschine (untere Etage)",
         item_spuelmaschine_desc: "In der Küche im Erdgeschoss steht eine moderne Spülmaschine bereit. Bitte verwenden Sie AUSSCHLIESSLICH die von uns gestellten Spülmaschinentabs (weitere Tabs erhalten Sie bei uns für 10 Baht pro Stück), um Schäden an der Maschine zu vermeiden.",
@@ -312,8 +312,8 @@ const faqTranslations = {
         item_sauberkeit_title: "Care & Cleanliness",
         item_sauberkeit_desc: "The Carma is a private luxury home. Please treat the premises with care, keep it tidy, and notify us of any damages promptly.",
         
-        item_schaeden_title: "Damage Reporting",
-        item_schaeden_desc: "Accidents can happen. Please notify us of any damage immediately or at check-out. Minor damages are settled amicably against the deposit; major incidents are covered by booking platform insurance policies.",
+        item_schaeden_title: "Damages & Incident Reporting",
+        item_schaeden_desc: "Accidents can happen to anyone – that is never a problem as long as we know. Please report any damage to our villa manager immediately or at the latest during the villa handover at check-out.\n\n• Minor damages are settled simply and transparently directly against the cash deposit.\n• Major damages are processed via booking platform protection programs (e.g. Airbnb AirCover). Please note: while booking platforms handle initial reimbursement, they subsequently seek monetary recovery from the guest or their personal liability insurance.\n\nOpen, timely communication on-site is the fairest and most hassle-free solution for everyone.",
         
         item_spuelmaschine_title: "Dishwasher (Ground Floor)",
         item_spuelmaschine_desc: "The lower floor kitchen features a modern dishwasher. Please ONLY use the specialized dishwasher tablets provided by us (additional tablets are available for 10 Baht each) to avoid appliance damage.",
@@ -472,8 +472,8 @@ const faqTranslations = {
         item_sauberkeit_title: "Propreté & Soin",
         item_sauberkeit_desc: "The Carma est une villa de standing. Merci de la traiter avec respect et de signaler toute anomalie.",
         
-        item_schaeden_title: "Déclaration de Dommages",
-        item_schaeden_desc: "Un incident peut arriver. Signalez-le nous rapidement. Les petits dégâts sont déduits de la caution.",
+        item_schaeden_title: "Dégâts & Déclaration de Dommages",
+        item_schaeden_desc: "Un incident peut arriver à tout le monde – ce n'est pas un problème tant que nous sommes prévenus. Merci de signaler tout dégât à notre villa manager immédiatement ou au plus tard lors de la remise de la villa au départ (Check-Out).\n\n• Les petits dommages sont déduits de manière simple et transparente directement sur la caution en espèces.\n• Les dommages plus importants sont traités via les programmes de protection des plateformes de réservation (ex. Airbnb AirCover). Bon à savoir : bien que les plateformes gèrent l'indemnisation initiale, elles réclament ensuite le préjudice financier directement au voyageur ou à son assurance responsabilité civile.\n\nUne communication directe et transparente sur place reste la solution la plus simple et la plus sereine pour tous.",
         
         item_spuelmaschine_title: "Lave-vaisselle (Étage Inférieur)",
         item_spuelmaschine_desc: "Utilisez exclusivement les tablettes fournies par nos soins pour éviter toute panne.",
@@ -629,8 +629,8 @@ const faqTranslations = {
         item_sauberkeit_title: "Cuidado y Limpieza",
         item_sauberkeit_desc: "The Carma es una villa de alta categoría. Trátela con cariño y avísenos de cualquier inconveniente.",
         
-        item_schaeden_title: "Aviso de Daños",
-        item_schaeden_desc: "Cualquier percance puede ocurrir. Avísenos de inmediato. Los daños menores se descuentan amistosamente de la fianza.",
+        item_schaeden_title: "Daños y Aviso de Desperfectos",
+        item_schaeden_desc: "A cualquiera le puede ocurrir un percance; no pasa nada siempre y cuando nos avise. Rogamos informe de cualquier daño a nuestro gerente de la villa de inmediato o a más tardar durante la entrega de la villa en el check-out.\n\n• Los daños menores se liquidan de forma sencilla y transparente directamente de la fianza en efectivo.\n• Los daños mayores se tramitan a través de los programas de protección de los portales de reserva (p. ej. Airbnb AirCover). Información importante: aunque las plataformas gestionan el reembolso inicial, posteriormente reclaman la compensación económica al huésped o a su seguro de responsabilidad civil.\n\nLa comunicación abierta y oportuna durante su estancia es la vía más justa y tranquila para todos.",
         
         item_spuelmaschine_title: "Lavavajillas (Planta Baja)",
         item_spuelmaschine_desc: "Utilice únicamente las pastillas proporcionadas por nosotros para evitar averías.",
