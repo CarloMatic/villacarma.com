@@ -135,7 +135,8 @@ const faqTranslations = {
         
         // S
         item_sonnenschirme_title: "Sonnenschirme",
-        item_sonnenschirme_desc: "Aufgrund plötzlicher tropischer Windböen bitten wir Sie, alle Sonnenschirme stets zu schließen und zu verschnüren, wenn Sie das Haus verlassen oder wenn Wind aufkommt.",
+        item_sonnenschirme_desc: "Aufgrund plötzlicher tropischer Windböen bitten wir Sie, alle Sonnenschirme stets zu schließen und zu verschnüren, wenn Sie das Haus verlassen oder wenn Wind aufkommt.\n\nSonnenschirmständer richtig bewegen (ohne Kratzer):\nUm den Terrassenboden zu schonen, ziehen oder schleifen Sie den schweren Ständer bitte niemals über den Boden. Halten Sie den Schirm einfach fest, drücken Sie den Ständer unten mit dem Fuß nach vorne und kippen Sie ihn leicht an – so lässt er sich ganz leicht auf seinen Rollen bewegen (siehe Video unten).",
+        item_sonnenschirme_video_caption: "Video-Anleitung: Sonnenschirmständer leicht rollen",
         
         item_sauberkeit_title: "Sauberkeit & Sorgfaltspflicht",
         item_sauberkeit_desc: "The Carma ist ein privates Luxusanwesen. Bitte behandeln Sie das Haus und das Mobiliar pfleglich und hinterlassen Sie es ordentlich. Schäden bitten wir unverzüglich zu melden.",
@@ -301,7 +302,8 @@ const faqTranslations = {
         
         // S
         item_sonnenschirme_title: "Sun Umbrellas (Parasols)",
-        item_sonnenschirme_desc: "Due to sudden tropical wind gusts, please always close and tie down all sun umbrellas when leaving the villa or during windy weather.",
+        item_sonnenschirme_desc: "Due to sudden tropical wind gusts, please always close and tie down all sun umbrellas when leaving the villa or during windy weather.\n\nHow to move the parasol stand easily (scratch-free):\nTo protect the terrace floor, please never drag or scrape the heavy stand across the floor. Simply hold the umbrella firmly, push the base forward at the bottom with your foot, and tilt it slightly – this allows it to roll effortlessly on its wheels (see video below).",
+        item_sonnenschirme_video_caption: "Video demonstration: Rolling the parasol stand easily",
         
         item_sauberkeit_title: "Care & Cleanliness",
         item_sauberkeit_desc: "The Carma is a private luxury home. Please treat the premises with care, keep it tidy, and notify us of any damages promptly.",
@@ -458,7 +460,8 @@ const faqTranslations = {
         item_ruhe_desc: "Merci de respecter le voisinage paisible de Franks Hill. Le calme complet est exigé à partir de 22h00.",
         
         item_sonnenschirme_title: "Parasols",
-        item_sonnenschirme_desc: "Fermez et attachez impérativement les parasols en cas de vent et lorsque vous quittez la villa.",
+        item_sonnenschirme_desc: "En raison de rafales de vent tropical soudaines, veuillez toujours fermer et attacher soigneusement les parasols lorsque vous quittez la villa ou en cas de vent.\n\nComment déplacer le pied de parasol facilement (sans rayer le sol) :\nPour préserver le sol de la terrasse, ne tirez et ne traînez jamais le pied lourd sur le sol. Tenez simplement le parasol fermement, poussez le bas avec votre pied vers l'avant et basculez-le légèrement pour pouvoir le faire rouler sans effort (voir vidéo ci-dessous).",
+        item_sonnenschirme_video_caption: "Tutoriel vidéo : Faire rouler facilement le pied de parasol",
         
         item_sauberkeit_title: "Propreté & Soin",
         item_sauberkeit_desc: "The Carma est une villa de standing. Merci de la traiter avec respect et de signaler toute anomalie.",
@@ -612,7 +615,8 @@ const faqTranslations = {
         item_ruhe_desc: "Franks Hill es una tranquila zona residencial. A partir de las 22:00 horas rige el silencio estricto en exteriores.",
         
         item_sonnenschirme_title: "Sombrillas",
-        item_sonnenschirme_desc: "Debido a ráfagas repentinas de viento tropical, por favor cierre y ate siempre todas las sombrillas al salir de la villa o cuando sople viento fuerte.",
+        item_sonnenschirme_desc: "Debido a ráfagas repentinas de viento tropical, por favor cierre y ate siempre todas las sombrillas al salir de la villa o cuando sople viento fuerte.\n\nCómo mover la base de la sombrilla fácilmente (sin rayar el suelo):\nPara proteger las baldosas de la terraza, nunca arrastre la base pesada sobre el suelo. Simplemente sujete bien la sombrilla, presione la base hacia adelante con el pie e inclínela ligeramente para rodarla con total facilidad (vea el vídeo a continuación).",
+        item_sonnenschirme_video_caption: "Vídeo explicativo: Cómo rodar la base de la sombrilla con facilidad",
         
         item_sauberkeit_title: "Cuidado y Limpieza",
         item_sauberkeit_desc: "The Carma es una villa de alta categoría. Trátela con cariño y avísenos de cualquier inconveniente.",
